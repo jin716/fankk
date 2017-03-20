@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/user/u/welcome.do" location="950,250" dimension="301,104" />
+  <StrutsActivity path="/user/u/userInfoSubmit.do" location="950,650" dimension="337,104" />
+  <StrutsActivity path="/user/u/login.do" location="950,50" dimension="279,104" />
+  <StrutsActivity path="/user/u/password.do" location="950,1050" dimension="303,104" />
+  <StrutsActivity path="/user/u/evaluate.do" location="350,1250" dimension="295,104" />
+  <StrutsActivity path="/user/u/evaluateCommit.do" location="50,350" dimension="340,104" />
+  <StrutsActivity path="userLogin;6" location="50,1350" dimension="206,87" />
+  <StrutsActivity path="/user/u/password_frame.jsp" location="650,950" dimension="195,53" />
+  <StrutsActivity path="/user/u/userInfoEdit_frame.jsp" location="350,650" dimension="208,53" />
+  <StrutsActivity path="/user/u/welcome.jsp" location="950,450" dimension="150,53" />
+  <StrutsActivity path="/user/u/orderList_frame.jsp" location="350,1050" dimension="190,53" />
+  <StrutsActivity path="/user/u/userInfo_frame.jsp" location="650,350" dimension="186,53" />
+  <StrutsActivity path="/user/u/orderListHistory_frame.jsp" location="50,1150" dimension="231,53" />
+  <StrutsActivity path="/user/u/changeOk.jsp" location="650,750" dimension="158,53" />
+  <StrutsActivity path="/user/u/changeError.jsp" location="350,850" dimension="171,53" />
+  <StrutsActivity path="/user/u/userLogin_frame.jsp" location="50,650" dimension="195,53" />
+  <StrutsActivity path="/user/u/rating_display.jsp" location="950,1250" dimension="179,53" />
+  <StrutsActivity path="/user/u/rating.jsp" location="1250,1250" dimension="133,53" />
+  <StrutsActivity path="/" location="650,550" dimension="37,53" />
+  <StrutsActivity path="/user/u/orderList.jsp" location="350,50" dimension="151,53" />
+  <StrutsActivity path="/user/s/itemEdit.jsp" location="74,506" dimension="145,53" />
+  <StrutsActivity path="/user/s/itemList.jsp" location="413,506" dimension="142,53" />
+  <StrutsActivity path="/user/s/storeInfo.jsp" location="738,506" dimension="151,53" />
+  <StrutsActivity path="/user/s/storeEdit.jsp" location="74,204" dimension="150,53" />
+  <StrutsActivity path="/user/login.jsp" location="5,791" dimension="116,53" />
+  <StrutsActivity path="" location="650,150" dimension="32,53" />
+  <StrutsActivity path="password.jsp" location="950,850" dimension="109,53" />
+  <StrutsActivity path="password_frame.jsp" location="50,950" dimension="148,53" />
+  <StrutsActivity path="rating.jsp" location="1250,450" dimension="86,53" />
+  <StrutsActivity path="rating_display.jsp" location="1250,850" dimension="132,53" />
+  <StrutsTransition id="/user/u/welcome.do,userInfo,/user/u/userInfo_frame.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,332" />
+      <AbsolutePoint location="743,332" />
+      <AbsolutePoint location="743,350" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/user/u/welcome.do,orderListInterval,/user/u/orderListHistory_frame.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,272" />
+      <AbsolutePoint location="260,272" />
+      <AbsolutePoint location="260,1150" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/user/u/userInfoSubmit.do,ok,/user/u/changeOk.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1088,754" />
+      <AbsolutePoint location="1088,776" />
+      <AbsolutePoint location="808,776" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/user/u/password_frame.jsp,null,/user/u/password.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="747,1003" />
+      <AbsolutePoint location="747,1118" />
+      <AbsolutePoint location="950,1118" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/user/u/evaluateCommit.do,show,/user/u/rating_display.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="296,454" />
+      <AbsolutePoint location="296,1429" />
+      <AbsolutePoint location="1039,1429" />
+      <AbsolutePoint location="1039,1303" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/user/u/rating.jsp,null,/user/u/evaluateCommit.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1346,1303" />
+      <AbsolutePoint location="1346,1519" />
+      <AbsolutePoint location="326,1519" />
+      <AbsolutePoint location="326,454" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/user/u/evaluate.do,rate,/user/u/rating.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="645,1318" />
+      <AbsolutePoint location="1316,1318" />
+      <AbsolutePoint location="1316,1303" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/user/u/welcome.do,userInfoEdit,/user/u/userInfoEdit_frame.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,302" />
+      <AbsolutePoint location="398,302" />
+      <AbsolutePoint location="398,650" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/user/u/userInfoSubmit.do,error,/user/u/changeError.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,718" />
+      <AbsolutePoint location="435,718" />
+      <AbsolutePoint location="435,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/user/u/userLogin_frame.jsp,null,/user/u/login.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="147,676" />
+      <AbsolutePoint location="1089,102" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/user/u/password.do,error,/user/u/changeError.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1088,1050" />
+      <AbsolutePoint location="1088,1018" />
+      <AbsolutePoint location="435,1018" />
+      <AbsolutePoint location="435,903" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="userLogin;6,null,/user/u/userLogin_frame.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,1393" />
+      <AbsolutePoint location="-70,1393" />
+      <AbsolutePoint location="-70,676" />
+      <AbsolutePoint location="50,676" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/user/u/welcome.do,welcome,/user/u/welcome.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1070,354" />
+      <AbsolutePoint location="1070,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/user/u/evaluate.do,show,/user/u/rating_display.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="645,1288" />
+      <AbsolutePoint location="950,1288" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/user/u/welcome.do,password,/user/u/password_frame.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1251,302" />
+      <AbsolutePoint location="1457,302" />
+      <AbsolutePoint location="1457,976" />
+      <AbsolutePoint location="845,976" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/user/u/password.do,ok,/user/u/changeOk.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1118,1050" />
+      <AbsolutePoint location="1118,918" />
+      <AbsolutePoint location="729,918" />
+      <AbsolutePoint location="729,803" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/user/u/welcome.do,orderList,/user/u/orderList_frame.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1115,354" />
+      <AbsolutePoint location="1115,521" />
+      <AbsolutePoint location="934,521" />
+      <AbsolutePoint location="934,1076" />
+      <AbsolutePoint location="540,1076" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

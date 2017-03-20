@@ -1,0 +1,117 @@
+#add_wall A:link {
+	COLOR: #666; TEXT-DECORATION: underline
+}
+A:visited {
+	COLOR: #666; TEXT-DECORATION: underline
+}
+#add_wall A:hover {
+	COLOR: #ff6600; TEXT-DECORATION: underline
+}
+A:active {
+	COLOR: #ff6600; TEXT-DECORATION: underline
+}
+#pop_upbox {
+	Z-INDEX: 102; TEXT-ALIGN: left; DISPLAY: none; COLOR: #000000; OVERFLOW: hidden;
+	__position:fixed;
+	__padding:0px;
+}
+#pop_upbox H3 {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 28px; MARGIN-TOP: 1px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; BACKGROUND: #f0f0f0; HEIGHT: 28px; COLOR: #666; PADDING-TOP: 0px
+}
+#upbox_cont {
+	POSITION: relative;
+	__position:fixed;
+	__padding:0px;
+}
+#upbox_cont .addlist {
+	BORDER-BOTTOM: #ff9900 1px solid; PADDING-BOTTOM: 5px; PADDING-LEFT: 13px; WIDTH: 780px; PADDING-RIGHT: 13px; PADDING-TOP: 5px;
+	__position:fixed;
+	__padding:0px;
+}
+
+
+#upbox_cont .addlist LI {
+	TEXT-ALIGN: center; LINE-HEIGHT: 18px; WIDTH: 65px; FLOAT: left; HEIGHT: 18px; FONT-SIZE: 13px; CURSOR: pointer; FONT-WEIGHT: bold
+}
+#upbox_cont .current {
+	BACKGROUND: #f90; COLOR: #fff
+}
+.addlist .current {
+	BACKGROUND: #fe8b18
+}
+.addlist .current A {
+	COLOR: #fff
+}
+.addlist .hover {
+	BACKGROUND: #ffe5b5
+}
+.addlist A {
+	OUTLINE-STYLE: none; OUTLINE-COLOR: invert; PADDING-LEFT: 2px; OUTLINE-WIDTH: 0px; WIDTH: 65px; DISPLAY: inline-block; COLOR: #da4901; TEXT-DECORATION: none
+}
+.soadd {
+	PADDING-BOTTOM: 3px; LINE-HEIGHT: 21px; MARGIN-TOP: 2px; PADDING-LEFT: 15px; BACKGROUND: #edf1f3; HEIGHT: 21px; COLOR: #999
+}
+.soadd FORM INPUT {
+	LINE-HEIGHT: 18px; WIDTH: 130px; FLOAT: left; HEIGHT: 18px
+}
+.soadd .sobtn {
+	BORDER-BOTTOM: #818181 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #818181 1px solid; LINE-HEIGHT: 18px; MARGIN: 3px 3px 3px 7px; WIDTH: 60px; BACKGROUND: #2e6ab1; HEIGHT: 18px; COLOR: #fff; BORDER-TOP: #818181 1px solid; BORDER-RIGHT: #818181 1px solid
+}
+.soadd DIV {
+	LINE-HEIGHT: 22px; FLOAT: left; HEIGHT: 22px
+}
+.so_abc LI {
+	TEXT-ALIGN: center; WIDTH: 29px; FLOAT: left; COLOR: #777; CURSOR: pointer; FONT-WEIGHT: bold
+}
+.so_abc .currentLetter {
+	BACKGROUND: #fe8b18
+}
+.so_abc .currentLetter A {
+	COLOR: #fff
+}
+.so_abc .hover {
+	BACKGROUND: #ffe5b5
+}
+.so_abc A {
+	OUTLINE-STYLE: none; OUTLINE-COLOR: invert; PADDING-LEFT: 2px; OUTLINE-WIDTH: 0px; WIDTH: 29px; DISPLAY: inline-block; COLOR: #da4901
+}
+.adds UL {
+	HEIGHT: auto
+}
+#add_wall {
+	MARGIN: 0px auto; WIDTH: 780px
+}
+#add_wall LI {
+	BORDER-BOTTOM: #a6d0e7 1px solid; BORDER-LEFT: #a6d0e7 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 20px; MARGIN: 0px 3px 5px; PADDING-LEFT: 5px; WIDTH: 235px; PADDING-RIGHT: 5px; BACKGROUND: #f8f8f8; FLOAT: left; HEIGHT: 20px; OVERFLOW: hidden; BORDER-TOP: #a6d0e7 1px solid; CURSOR: pointer; BORDER-RIGHT: #a6d0e7 1px solid; PADDING-TOP: 0px;
+}
+#add_wall .hover {
+	BORDER-BOTTOM: #00356a 1px solid; BORDER-LEFT: #00356a 1px solid; BACKGROUND: #4092d5; BORDER-TOP: #00356a 1px solid; BORDER-RIGHT: #00356a 1px solid
+}
+#add_wall .hover A {
+	COLOR: #fff; FONT-WEIGHT: bold
+}
+#add_wall .hover .num_res {
+	COLOR: #fff
+}
+.so_longing {
+	POSITION: absolute; PADDING-BOTTOM: 6px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; COLOR: #f66; TOP: 150%; PADDING-TOP: 6px; LEFT: 40%
+}
+.adds A:link {
+	DISPLAY: block; TEXT-DECORATION: none
+}
+.adds A:visited {
+	DISPLAY: block; TEXT-DECORATION: none
+}
+.adds A:hover {
+	COLOR: #333
+}
+.adds A:active {
+	COLOR: #333
+}
+.adds .num_res {
+	FLOAT: right; COLOR: #999;
+	!margin-top:-19px;/*ÎªÁËËÑ¹·*/
+}
+#pop_upbox .noseeadd {
+	TEXT-ALIGN: center
+}

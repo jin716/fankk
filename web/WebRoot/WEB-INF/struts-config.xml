@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+    <form-bean name="adviseForm" type="com.ymai.struts.action.AdviseForm" />
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards>
+  	<forward name="index" path="/index.jsp"></forward>
+  	<forward name="noStore" path="/user/noStore.html"></forward>
+  </global-forwards>
+  <action-mappings>
+    <action path="/vCode" type="com.ymai.struts.action.VCodeAction" />
+    <action path="/test" type="com.ymai.struts.action.TestAction" />
+    <action path="/map" type="com.ymai.struts.action.MapAction" >
+    	<forward name="store" path="/map/store.jsp"></forward>
+    	<forward name="stores" path="/map/stores.jsp"></forward>
+    	<forward name="area" path="/map/area.jsp"></forward>
+    	<forward name="block" path="/map/block.jsp"></forward>
+    	<forward name="storeAndBlocks" path="/map/storeAndBlocks.jsp"></forward>
+    	
+    </action>
+    <action path="/order/search" type="com.ymai.struts.action.SearchAction">
+    	<forward name="blockList" path="/order/block_search_result.jsp"></forward>
+    	<forward name="storeList" path="/order/store_search_result.jsp"></forward>
+    	
+    </action>
+    <action path="/user/a/addBlock" type="com.ymai.struts.action.user.a.AddBlockAction" />
+    <action
+      name="adviseForm"  path="/advise"  type="com.ymai.struts.action.AdviseAction" validate="false" >
+      	<forward name="ok" path="/static/adviseok.html"></forward>
+      	<forward name="error" path="/static/adviseError.html"></forward>
+    </action>
+    <action path="/jifen" type="com.ymai.struts.action.JifenAction">
+    	<forward name="list" path="/jifen.jsp"></forward>
+    	<forward name="detail" path="/duihuan.jsp"></forward>
+    	<forward name="noUser" path="/duihuanNoUser.html"></forward>
+    	<forward name="duihuanOk" path="/duihuanOk.html"></forward>
+    	<forward name="duihuanError" path="/duihuanError.html"></forward>
+    	<forward name="jifenError" path="/jifenError.html"></forward>
+    </action>
+   </action-mappings>
+
+
+  <message-resources parameter="com.ymai.struts.ApplicationResources" />
+</struts-config>
+

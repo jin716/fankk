@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+ul{list-style-type:none;
+padding:0px;
+margin:0px;
+}
+
+li{list-style-type:none;}
+
+#menu_001{
+	padding-top:10px;
+	padding-left:8px;
+}
+
+.system_menu1 ul{
+	font-size:13px;
+	list-style-type:none;
+	line-height:26px;	
+}
+
+
+.system_menu1 ul a{padding-left:16px;padding-bottom:6px;display:block;width:134px;height:20px;color: #414141;}
+.system_menu1 ul a:link {text-decoration: none}	
+.system_menu1 ul a:visited {text-decoration: none}	
+.system_menu1 ul a:hover {background:#DEE7ED;text-decoration: underline;}
+.system_menu1 ul a:active {
+	color:#ffffff;
+	background:#498cd0;
+	font-size: 12px;
+}
+
+.system_menu1 ul .current a{background:#498cd0;color: #fff;}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+	<data-sources />
+	<form-beans>
+    <form-bean name="blockEditForm" type="com.ymai.struts.action.user.a.BlockEditForm" />
+    <form-bean name="storeEditSbumitForm" type="com.ymai.struts.user.a.StoreEditSbumitForm" />
+    <form-bean name="menuUpForm" type="com.ymai.struts.action.user.a.MenuUpForm" />
+	</form-beans>
+
+	<global-exceptions />
+	<global-forwards>
+	</global-forwards>
+	<action-mappings>
+		<action path="/user/a/welcome" type="com.ymai.struts.action.user.a.WelcomeAction">
+			<forward name="welcome" path="/user/a/welcome.jsp"></forward>
+			<forward name="ulogin" path="/user/a/login_frame.html"></forward>
+			<forward name="storeList" path="/user/a/storeList_frame.jsp"></forward>
+			<forward name="storeEdit" path="/user/a/storeEdit_frame.jsp"></forward>			
+			<forward name="storeAdd" path="/user/a/storeAdd_frame.jsp"></forward>						
+			<forward name="blockEdit" path="/user/a/blockEdit_frame.jsp"></forward>
+			<forward name="blockAdd" path="/user/a/blockAdd_frame.jsp"></forward>
+			<forward name="menuUp" path="/user/a/menuUp_frame.jsp"></forward>
+		</action>
+		<action path="/user/a/login" type="com.ymai.struts.action.user.a.LoginAction">
+		</action>
+    	<action path="/user/a/getValue" type="com.ymai.struts.action.user.a.GetValueAction" />
+    	<action path="/user/a/blockEditSubmit"  name="blockEditForm" type="com.ymai.struts.action.user.a.BlockEditSubmitAction">
+    		<forward name="ok" path="/user/a/changeOk.jsp"></forward>
+    		<forward name="error" path="/user/a/welcome.do?action=blockEdit"></forward>
+    	</action>
+	    <action  name="storeEditSbumitForm" path="/user/a/storeEditSubmit" type="com.ymai.struts.action.user.a.StoreEditSubmitAction">
+	    	<forward name="ok" path="/user/a/storeAddOk.html"></forward>
+	    	<forward name="again" path="/user/a/storeAdd_frame.jsp"></forward>	    
+	    </action>
+    <action input="/user/a/menuUp_frame.jsp" name="menuUpForm"
+      path="/user/a/menuUp" 
+      type="com.ymai.struts.action.user.a.MenuUpAction"  validate="false" >
+	    	<forward name="ok" path="/user/a/menuUpOk.jsp"></forward>
+			<forward name="error" path="/user/a/menuUpError.jsp"></forward>
+    </action>
+     <action input="/user/a/menuUp_frame.jsp" name="menuUpForm"
+      path="/user/a/imageUp" 
+      type="com.ymai.struts.action.user.a.ImageUpAction"  validate="false" >
+	    	<forward name="ok" path="/user/a/menuUpOk.jsp"></forward>
+			<forward name="error" path="/user/a/menuUpError.jsp"></forward>
+    </action>
+    <action path="/user/a/distanceSubmit" type="com.ymai.struts.action.user.a.DistanceSubmitAction">
+    	<forward name="ok" path="/user/a/menuUpOk.jsp"></forward>
+		<forward name="error" path="/user/a/menuUpError.jsp"></forward>
+    </action>
+	</action-mappings>
+	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+		<set-property property="pathnames"
+			value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml" />
+	</plug-in>
+	<controller></controller>
+
+</struts-config>
+

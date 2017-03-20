@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<!-- 			jdbc:mysql://113.105.167.36:3306/ymai
+ -->
+	<session-factory>
+		<property name="c3p0.idle_test_period">1800</property>
+		<property name="connection.provider_class">
+			org.hibernate.connection.C3P0ConnectionProvider
+		</property>
+		<property name="c3p0.timeout">120</property>
+		<property name="hibernate.current_session_context_class">
+			thread
+		</property>
+		<property name="connection.username">fankk</property>
+		<property name="connection.password">fankk269015</property>
+		<property name="connection.url">
+			jdbc:mysql://localhost:3306/ymai
+		</property>
+		<property name="dialect">
+			com.ymai.hibernate.MySQLDialect
+		</property>
+		<property name="myeclipse.connection.profile">
+			mysql_jdbc
+		</property>
+		<!-- com.mysql.jdbc.Driver com.p6spy.engine.spy.P6SpyDriver-->
+		<property name="connection.driver_class">
+			com.mysql.jdbc.Driver
+		</property>
+		<property name="show_sql">true</property>
+		<mapping resource="com/ymai/hibernate/Area.hbm.xml" />
+		<mapping resource="com/ymai/hibernate/Item.hbm.xml" />
+		<mapping resource="com/ymai/hibernate/Order.hbm.xml" />
+		<mapping resource="com/ymai/hibernate/OrderItems.hbm.xml" />
+		<mapping resource="com/ymai/hibernate/Store.hbm.xml" />
+		<mapping resource="com/ymai/hibernate/Block.hbm.xml" />
+		<mapping resource="com/ymai/hibernate/User.hbm.xml" />
+		<mapping resource="com/ymai/hibernate/AdminUser.hbm.xml" />
+		<mapping resource="com/ymai/hibernate/OrderEvaluate.hbm.xml" />
+		<mapping resource="com/ymai/hibernate/City.hbm.xml" />
+		<mapping resource="com/ymai/hibernate/CityIp.hbm.xml" />
+		<mapping resource="com/ymai/hibernate/StoreBlock.hbm.xml" />
+		<mapping resource="com/ymai/hibernate/StoreComnt.hbm.xml" />
+		<mapping resource="com/ymai/hibernate/StoreApply.hbm.xml" />
+		<mapping resource="com/ymai/hibernate/Liuyan.hbm.xml" />
+		<mapping resource="com/ymai/hibernate/OrderTrace.hbm.xml" />
+		<mapping resource="com/ymai/hibernate/TgUserAndUser.hbm.xml" />
+		<mapping resource="com/ymai/hibernate/TgUser.hbm.xml" />
+		<mapping resource="com/ymai/hibernate/TgUserAndStore.hbm.xml" />
+		<mapping resource="com/ymai/hibernate/SearchCount.hbm.xml" />
+		<mapping resource="com/ymai/hibernate/RoleAdmin.hbm.xml" />
+		<mapping resource="com/ymai/hibernate/Admin.hbm.xml" />
+		<mapping resource="com/ymai/hibernate/Role.hbm.xml" />
+		<mapping resource="com/ymai/hibernate/Gift.hbm.xml" />
+		<mapping resource="com/ymai/hibernate/Duihuan.hbm.xml" />
+
+	</session-factory>
+
+</hibernate-configuration>

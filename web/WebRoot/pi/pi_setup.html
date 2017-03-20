@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+
+
+<link href="css/pi.css" rel="stylesheet" type="text/css" />
+<link href="css/pi_setup.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+<div class="main" id="maindiv">
+        <form id="form_basic_admin" name="form_basic_admin" action="http://my.paipai.com/cgi-bin/c2cUser_modity_basicInfo" method="post">
+        
+        <div class="h4title"><h4>个人资料设置<span style="font-weight: normal;"></span></h4></div>
+        <div class="bcontentlist">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+            
+            
+            <tr errorclass="list_error exception">
+              <th><span class="fontOrange" cp="canchangespan" 
+style="display: none;">*</span>真实姓名：</th>
+              <td><input id="sName1" name="sName1" size="18" 
+maxlength="32" require="false" msg="真实姓名不正确(中文 1~16个汉字)" 
+datatype="Chinese" type="text"><input id="sName" name="sName" value="" 
+type="hidden"> </td>
+              <td class="txterror"><span>请输入您的中文或英文姓名(3-30字符，一个汉字为两个字符)。</span></td>
+            </tr>
+            <tr>
+              <th><span class="fontOrange">*</span>手机号码：</th>
+              <td><input value="" id="sMobile" name="sMobile" datatype="Mobile" require="false" msg="手机号码不正确" type="hidden"><input id="sMobile1" name="sMobile1" size="18" maxlength="11" type="text">
+               </td>
+              <td class="txterror"><span>请填写正确的手机号码。</span></td>
+            </tr>
+            <tr errorclass="list_error exception">
+              <th><span class="fontOrange" cp="canchangespan" 
+style="display: none;">*</span>街道地址：</th>
+              <td><input id="sAddress" name="sAddress" require="false" 
+datatype="LimitB" size="50" maxlength="255" type="text">
+                <span class="remark">(请填写您的详细地)</span></td>
+              <td class="txterror"><span>具体地址最少4个字符，最多不能超过255个字符。</span></td>
+            </tr>
+          <tr errorclass="list_error exception">
+           	  <th><span class="fontOrange">*</span>交易方式：</th>
+       	    <td><input id="cCommContactType" name="cCommContactType" 
+value="2" type="radio">手机　　
+       	    <input id="cCommContactType" name="cCommContactType" 
+value="1" type="radio">电话</td>
+       	    <td class="txterror"><span>请选择交易联系方式</span></td>
+            </tr>
+          </tbody></table>
+          <p class="submit"><input id="submit" name="提交" value=" 提 交 " 
+type="submit">　<a href="http://shop1.paipai.com/cgi-bin/user_info?uin=693703802">查看我的个人资料页</a></p>
+  
+        </div>
+        </form>
+    </div>
+
+
+
+</body>
+</html>

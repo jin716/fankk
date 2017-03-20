@@ -1,0 +1,36 @@
+@import url("http://static.paipaiimg.com/css/heads.css");
+@import url("http://static.paipaiimg.com/css/my/v1/menu.css");
+
+.main td,.main th {
+	vertical-align:top;
+}
+.main a:link,.main a:visited {
+	color:#014ccc;
+	text-decoration:underline;
+}
+.main a:hover,.main a:active {
+	color:#ff4e00;
+	text-decoration:underline;
+}
+.main .submit {
+	padding-left:95px;
+	margin-top:20px;
+}
+.main .h4title {
+	height:25px;
+	line-height:25px;
+	text-indent:10px;
+	margin:10px 0;
+	border-bottom:1px solid #d2eaff;
+	background:#f4fbff;
+}
+.main .gray {
+	color:#999;
+}
+.bcontentlist table td {
+	padding:5px;
+}
+.fontOrange {
+	margin-right:5px;
+	color:#f00;
+}

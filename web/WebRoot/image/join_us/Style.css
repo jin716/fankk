@@ -1,0 +1,61 @@
+﻿body { margin: 0; padding: 0; font-family: Arial; font-size: 14px; background-color: #F0F0F0; }
+ul { margin: 0; padding: 0; }
+li { margin: 0; padding: 0; list-style: none; }
+img { display: block; }
+#header { width: 960px; margin: 41px auto 0; overflow: hidden; }
+#header .logo { width: 213px; height: 41px; margin-left: 15px; float: left; display: inline; }
+#header .nav { float: right; width: 480px; height: 41px; }
+#header .nav ul li { float: left; width: 75px; height: 26px; margin-top: 15px; background-image: url(/Content/Images/navbg.gif); text-align: center; line-height: 26px; }
+.mright { margin-right: 5px; }
+a.link01 { color: #999; text-decoration: none; font-size: 12px; }
+a.link01:hover { color: #FF6600; text-decoration: none; font-size: 12px; }
+#navigation { width: 944px; margin: 27px auto 10px; padding-left: 16px; overflow: hidden; background-image: url(/Content/Images/pic01.gif); }
+#banner { margin: 0 auto; width: 960px; }
+.sbox-top { background: url(/Content/Images/pic03.gif) 0px 0px; margin: 0 auto; width: 960px; height: 4px; line-height: 0px; font-size: 0px; }
+.sbox-bottom { background: url(/Content/Images/pic03.gif) 0px -5px; margin: 0 auto; width: 960px; height: 4px; line-height: 0px; font-size: 0px; }
+.content { background-color: #FFF; width: 920px; padding: 15px 20px; overflow: hidden; margin: 0 auto; }
+.Aboutleft { float: left; margin-left: 19px; width: 208px; height: 275px; display: inline; }
+.Aboutright { width: 650px; float: right; margin-right: 12px; line-height: 27px; color: #595959; display: inline; }
+.Contactleft { float: left; margin-left: 19px; width: 395px; height: 275px; display: inline; }
+.Contactleft div { height: 35px; line-height: 35px; float: left; width: 395px; color: #333; }
+.Contactleft .qq { height: 31px; line-height: 31px; float: left; width: 354px; color: #002491; background: url(/Content/Images/qq.gif) no-repeat left center; padding-left: 41px; }
+.Contactleft .msn { height: 31px; line-height: 31px; float: left; width: 361px; color: #002491; background: url(/Content/Images/Msn.gif) no-repeat left center; padding-left: 34px; }
+.Contactleft .email { height: 31px; line-height: 31px; float: left; width: 365px; color: #002491; background: url(/Content/Images/email.gif) no-repeat left center; padding-left: 30px; }
+.Contactright { width: 467px; float: right; margin-right: 26px; line-height: 27px; color: #595959; display: inline; }
+.foot { width: 920px; padding: 23px; margin: 0 auto; text-align: center; color: #666; font-size: 12px; }
+.xian { height: 1px; background-color: #DFDFDF; line-height: 1px; font-size: 0px; margin: 8px 0 25px; }
+.xian01 { height: 1px; background-color: #DFDFDF; line-height: 1px; font-size: 0px; margin: 8px 0 20px; }
+#joins { width: 960px; margin: 10px auto 0; overflow: hidden; }
+#joins .left { width: 220px; float: left; }
+#joins .right { width: 728px; float: right; }
+#joins .left .content { padding: 4px 8px; width: 204px; background-color: #FFF; }
+#joins .left .content .list { width: 204px; font-weight: bold; margin: 1px 0; float: left; overflow: hidden; zoom: 1; }
+#joins .left .content .list span { height: 29px; line-height: 29px; width: 179px; background-color: #EFEFF1; padding-left: 25px; }
+#joins .left .content .list li { height: 25px; line-height: 25px; width: 173px; padding: 0 0 0 31px; margin: 1px 0 0; float: left; background: url(/Content/Images/pic06.gif) no-repeat 25px center #EFEFF1; background-color: #F7F7F9; }
+
+.jiantou01 { background: url(/Content/Images/jt01.gif) no-repeat 14px center; float: left; }
+.jiantou02 { background: url(/Content/Images/jt01-1.gif) no-repeat 14px center; float: left; }
+.joinbox-top { background: url(/Content/Images/pic04.gif) 0px 0px; margin: 0 auto; width: 220px; height: 3px; line-height: 0px; font-size: 0px; }
+.joinbox-bottom { background: url(/Content/Images/pic04.gif) 0px -4px; margin: 0 auto; width: 220px; height: 4px; line-height: 0px; font-size: 0px; }
+#joins .jiaji { background: url(/Content/Images/pic09.gif) no-repeat 8px center; width: 0px !important; height: 14px !important; padding-left: 23px !important; line-height: 14px !important; background-color:#F7F7F9 !important;}
+#joins .right .content { width: 688px; padding: 12px 20px 0; }
+#joins .right .content .zhiwei { background-image: url(/Content/Images/pic10.gif); width: 675px; margin: 10px auto 0; height: 19px; padding: 15px 0 0 17px; font-size: 12px; color: #FFF; font-weight: bold; }
+#joins .right .content .liebiao { border-right: solid 1px #DDD; background-color: #FAFAFA; text-align: center; }
+#joins .right .content .jieshao { width: 688px; margin: 0 auto; background-color: #FAFAFA; padding: 10px 0; overflow: hidden; color: #595959; font-size: 12px; line-height: 25px; }
+.box-top { background: url(/Content/Images/pic07.gif) 0px 0px; margin: 0 auto; width: 728px; height: 7px; line-height: 0px; font-size: 0px; }
+.box-bottom { background: url(/Content/Images/pic07.gif) 0px -8px; margin: 0 auto; width: 728px; height: 7px; line-height: 0px; font-size: 0px; }
+.jieshao .title { float: left; width: 80px; text-align: right; font-weight: bold; clear: both; }
+.jieshao .zhiweicontent { float: left; width: 580px; }
+
+a.a01 { border-bottom: solid 1px #DDD; border-top: solid 1px #DDD; border-left: solid 1px #DDD; float: left; width: 170px; height: 29px; line-height: 29px; color: #666; text-decoration: none; }
+a.a01:hover { border-bottom: solid 1px #DDD; border-top: solid 1px #DDD; border-left: solid 1px #DDD; float: left; width: 170px; height: 29px; line-height: 29px; background-color: #EFEFEF; font-weight: bold; }
+
+a.a02 { color: #666; text-decoration: none; font-size:12px;}
+a.a02:hover { color: #F60; text-decoration: none;  font-size:12px;}
+a.a03 { color: #F60; text-decoration: none;  font-size:12px;}
+a.a04 { color: #666; text-decoration: none; font-size: 12px; font-weight: normal; }
+a.a04:hover { color: #f60; text-decoration: none; font-size: 12px; font-weight: normal; }
+a.a05{color:#595959;font-weight:bold;text-decoration:none;}
+a.a05:hover{color:#F60;font-weight:bold;text-decoration:underline;}
+
+.jobxiangxi{display:none;}

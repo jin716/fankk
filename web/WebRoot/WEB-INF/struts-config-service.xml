@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans />
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >
+    <action path="/service/service" type="com.ymai.struts.action.service.ServiceAction">
+    	<forward name="oLogin" path="/service/outsideLogin.html" redirect="true"></forward>
+    	<forward name="iLogin" path="/service/insideLogin.html" redirect="true"></forward>
+    	<forward name="welcome" path="/service/welcome.jsp"></forward>
+    	<forward name="latestOrder" path="/service/latestOrder.jsp"></forward>
+    	<forward name="historyOrder" path="/service/historyOrder.jsp"></forward>
+    	<forward name="orderDetail" path="/service/orderDetail.jsp"></forward>
+    	<forward name="idOrder" path="/service/idOrder.jsp"></forward>
+    	<forward name="orderDetailBack" path="/service/orderDetailBack.jsp"></forward>
+    	<forward name="errorAndBack" path="/service/errorAndBack.html"></forward> 	
+    	<forward name="toLatestOrder" path="/service/service.do?action=latestOrder" redirect="true"></forward> 	
+    </action>
+    <action path="/service/in" type="com.ymai.struts.action.service.InAction">
+    	<forward name="welcome" path="/service/service.do" redirect="true"></forward>
+    	<forward name="again" path="/service/in.jsp" redirect="true"></forward>
+    </action>
+    <action path="/service/orderLock" type="com.ymai.struts.action.service.OrderLockAction" />
+
+  </action-mappings>
+
+  <controller />
+</struts-config>
+

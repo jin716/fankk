@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+	<data-sources />
+	<form-beans>
+    <form-bean name="evaluateForm" type="com.ymai.struts.action.user.u.EvaluateForm" />
+    <form-bean name="loginForm" type="com.ymai.struts.action.user.u.LoginForm" />
+    <form-bean name="passwordForm" type="com.ymai.struts.action.user.u.PasswordForm" />
+    <form-bean name="userInfoForm" type="com.ymai.struts.action.user.u.UserInfoForm" />
+	</form-beans>
+
+	<global-exceptions />
+	<global-forwards>
+		<forward name="userLogin" redirect="true" path="/user/u/userLogin_frame.jsp"></forward>
+	</global-forwards>
+	<action-mappings>
+		<action path="/user/u/welcome" type="com.ymai.struts.action.user.u.WelcomeAction">
+			<forward name="welcome" path="/user/u/welcome.jsp"></forward>
+			<forward name="userInfo" path="/user/u/userInfo_frame.jsp"></forward>
+			<forward name="userInfoEdit" path="/user/u/userInfoEdit_frame.jsp"></forward>
+			<forward name="password" path="/user/u/password_frame.jsp"></forward>
+			<forward name="orderList" path="/user/u/orderList_frame.jsp"></forward>
+			<forward name="orderListHistory" path="/user/u/orderListHistory_frame.jsp"></forward>
+			<forward name="jifen" path="/user/u/jifen_frame.jsp"></forward>
+		</action>
+		<action name="userInfoForm" path="/user/u/userInfoSubmit" type="com.ymai.struts.action.user.u.UserInfoSubmitAction">
+			<forward name="ok" path="/user/u/changeOk.jsp"></forward>
+			<forward name="error" path="/user/u/changeError.jsp"></forward>
+		</action>
+		<action name="loginForm" path="/user/u/login" input="/user/u/userLogin_frame.jsp" type="com.ymai.struts.action.user.u.LoginAction">
+		</action>
+	    <action name="passwordForm" input="/user/u/password_frame.jsp" validate="true" path="/user/u/password" type="com.ymai.struts.action.user.u.PasswordAction">
+	    	<forward name="ok" path="/user/u/changeOk.jsp"></forward>
+			<forward name="error" path="/user/u/changeError.jsp"></forward>
+	    </action>    
+   		<action path="/user/u/evaluate" type="com.ymai.struts.action.user.u.EvaluateAction">
+   			<forward name="rate" path="/user/u/rating.jsp"></forward>
+   			<forward name="show" path="/user/u/rating_display.jsp"></forward>
+   		</action>
+	    <action name="evaluateForm" validate="true" input="/user/u/rating.jsp" path="/user/u/evaluateCommit" type="com.ymai.struts.action.user.u.EvaluateCommitAction">
+   			<forward name="show" path="/user/u/rating_display.jsp"></forward>
+	    </action>
+	</action-mappings>
+		
+	
+	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+		<set-property property="pathnames"
+			value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml" />
+	</plug-in>
+	<controller maxFileSize="10M"></controller>
+
+</struts-config>
+

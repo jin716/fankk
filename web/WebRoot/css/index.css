@@ -1,0 +1,150 @@
+@charset "utf-8";
+.line_text_input {
+	color:#333; 
+	background:inherit; 
+	border: #006699; 
+	border-style: solid; 
+	border-width:0px 0px 1px 0px
+}
+*{
+	scrollbar-3dlight-color:#cccccc;
+	scrollbar-arrow-color:#ffffff; 
+	scrollbar-base-color:#cccccc; 
+	scrollbar-darkshadow-color:#cccccc; 
+	scrollbar-face-color:#ccc; 
+	scrollbar-highlight-color:#ffffff; 
+	scrollbar-shadow-color:#ffffff;		
+} 
+
+#ibody{
+	width:inherit;
+	height:auto;
+	position:relative;
+	margin:0 auto;
+	padding:0px;
+	/*border:red dotted 1px;*/
+
+}
+
+#main{
+	/*border: 1px solid #E5E5E5;*/
+	width:490px;
+	height:auto;
+	float:left;
+
+}
+
+#main_func{
+	border:#cccccc solid 1px;
+	height:230px;
+	width:489px;
+
+}
+
+#right_sidebar{
+	width:262px;
+	height:418px;
+	float:left;
+	__position:fixed;
+	__padding:0px;
+	__margin-top:-430px;
+	__margin-left:358px;
+}
+
+#right_ad_area{
+	width:262px;
+	height:390px;
+	float:left;
+	border:#cccccc solid 1px;
+}
+
+.catatest{background:url(../image/taobao_index.png) no-repeat -999em 0;}
+
+.catatest{
+background-position:0 -312px;
+float:left;
+margin-left:20px;
+width:172px;
+text-align:center;
+height:24px;
+color:#666666;
+font-size:12px;
+padding-top:4px;
+}
+
+.brandLogoShow li{
+	width:87px;
+	float:left;
+	text-align:center;
+	height:97px;
+	overflow:hidden;
+	color:#818181;
+}
+
+.brandLogoShow li a{
+background:url("../image/index/f_brandlogo_bg_v2.0.gif") no-repeat scroll left top transparent;
+display:block;
+height:50px;
+padding:6px;
+width:75px;
+float:left;
+}
+
+.brandLogoShow li a.atext{
+background:none;
+display:block;
+height:30px;
+padding:6px;
+width:75px;
+float:left;
+text-align:center;
+color:#818181;
+}
+
+ul.ad {
+	border: 3px double #999;
+	height: 442px;
+	width: 200px;
+	overflow: auto;
+	overflow-x: hidden;
+	padding: 2px;
+	
+}
+li.ad {
+	list-style-type: none;
+}
+.ad li a img {
+	filter: Alpha(Opacity=70);
+	opacity:0.7;
+	-ms-filter:"Alpha(Opacity=70)";
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	width:180px;
+	height:50px;
+	padding: 2px;	
+}
+.ad li a:hover img {
+	filter: Alpha(Opacity=100);
+	opacity:1;
+	-ms-filter:"Alpha(Opacity=100)";
+	border: 1px solid #666666;
+	padding: 1px;
+}
+
+td.orange{
+	color:#E01707;
+	font-size:12px;
+}
+
+
+
+#homePushShow a{
+	cursor:default;
+}
+
+#right_ad_area a{
+
+}
+ 

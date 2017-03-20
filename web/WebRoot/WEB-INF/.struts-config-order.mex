@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/order/blockList.do" location="650,50" dimension="296,104" />
+  <StrutsActivity path="/order/storeList.do" location="50,250" dimension="295,104" />
+  <StrutsActivity path="/order/store.do" location="650,250" dimension="276,104" />
+  <StrutsActivity path="/order/addOrder.do" location="50,450" dimension="304,104" />
+  <StrutsActivity path="/order/getComment.do" location="350,850" dimension="410,116" />
+  <StrutsActivity path="/order/addComnt.do" location="50,1250" dimension="392,116" />
+  <StrutsActivity path="/order/blockList.jsp" location="950,450" dimension="146,53" />
+  <StrutsActivity path="/order/storeList.jsp" location="50,650" dimension="144,53" />
+  <StrutsActivity path="/order/store.jsp" location="350,650" dimension="125,53" />
+  <StrutsActivity path="/order/orderComfirm.html" location="950,1450" dimension="186,53" />
+  <StrutsActivity path="/order/orderError.html" location="950,1250" dimension="166,53" />
+  <StrutsActivity path="/order/liuyan_content.jsp" location="350,1050" dimension="221,56" />
+  <StrutsActivity path="/order/comment.jsp" location="950,1050" dimension="185,56" />
+  <StrutsActivity path="/order/all_content.jsp" location="650,1050" dimension="195,56" />
+  <StrutsActivity path="/order/comment_content.jsp" location="50,1050" dimension="249,56" />
+  <StrutsActivity path="/order/phone_validate_ok.htm" location="50,1450" dimension="207,53" />
+  <StrutsActivity path="/order/orderValidate.jsp" location="50,850" dimension="215,56" />
+  <StrutsActivity path="/order/orderOk.html" location="650,1250" dimension="153,53" />
+  <StrutsActivity path="/order/areaList.jsp" location="650,450" dimension="140,53" />
+  <StrutsActivity path="/order/orderError.jsp" location="650,650" dimension="158,53" />
+  <StrutsActivity path="/order/orderOk.jsp" location="950,650" dimension="145,53" />
+  <StrutsActivity path="comment_content.jsp" location="950,850" dimension="196,56" />
+  <StrutsActivity path="/order/orderComfirm.jsp" location="50,1650" dimension="178,53" />
+  <StrutsActivity path="/order/orderCommit.do" location="350,1450" dimension="325,104" />
+  <StrutsActivity path="" location="1250,450" dimension="32,53" />
+  <StrutsActivity path="/order/o" location="1250,850" dimension="83,53" />
+  <StrutsActivity path="/order/orderCommitValidate.do" location="1250,650" dimension="325,104" />
+  <StrutsTransition id="/order/addOrder.do,comfirm,/order/orderComfirm.html,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="354,518" />
+      <AbsolutePoint location="890,518" />
+      <AbsolutePoint location="890,1476" />
+      <AbsolutePoint location="950,1476" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/order/blockList.do,list,/order/blockList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="946,102" />
+      <AbsolutePoint location="1023,102" />
+      <AbsolutePoint location="1023,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/order/orderCommit.do,ok,/order/orderOk.html,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="665,1450" />
+      <AbsolutePoint location="665,1303" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/order/orderCommit.do,v,/order/orderError.html,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="512,1450" />
+      <AbsolutePoint location="512,1411" />
+      <AbsolutePoint location="1033,1411" />
+      <AbsolutePoint location="1033,1303" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/order/getComment.do,main,/order/comment.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="760,921" />
+      <AbsolutePoint location="1042,921" />
+      <AbsolutePoint location="1042,1050" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/order/store.do,store,/order/store.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,302" />
+      <AbsolutePoint location="412,302" />
+      <AbsolutePoint location="412,650" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/order/getComment.do,comment,/order/comment_content.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="350,921" />
+      <AbsolutePoint location="174,921" />
+      <AbsolutePoint location="174,1050" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/order/orderCommit.do,ok,,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="675,1518" />
+      <AbsolutePoint location="1266,1518" />
+      <AbsolutePoint location="1266,503" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/order/getComment.do,all,/order/all_content.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="665,966" />
+      <AbsolutePoint location="665,1050" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/order/orderCommitValidate.do,error,/order/orderError.html,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1412,754" />
+      <AbsolutePoint location="1412,1276" />
+      <AbsolutePoint location="1116,1276" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/order/addOrder.do,error,/order/orderError.html,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="314,554" />
+      <AbsolutePoint location="314,1181" />
+      <AbsolutePoint location="1033,1181" />
+      <AbsolutePoint location="1033,1250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/order/storeList.do,list,/order/storeList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,302" />
+      <AbsolutePoint location="-25,302" />
+      <AbsolutePoint location="-25,676" />
+      <AbsolutePoint location="50,676" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/order/addOrderNoUser.do,ok,/order/phone_validate_ok.htm,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="350,1488" />
+      <AbsolutePoint location="257,1488" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/order/orderCommitValidate.do,ok,/order/orderOk.html,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1382,754" />
+      <AbsolutePoint location="1382,1121" />
+      <AbsolutePoint location="726,1121" />
+      <AbsolutePoint location="726,1250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/order/addOrderNoUser.do,again,/order/orderValidate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="524,1502" />
+      <AbsolutePoint location="157,878" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/order/orderCommit.do,validate,/order/orderValidate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="586,1450" />
+      <AbsolutePoint location="586,1011" />
+      <AbsolutePoint location="144,1011" />
+      <AbsolutePoint location="144,906" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/order/orderCommit.do,validate,/order/orderError.html,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="512,1450" />
+      <AbsolutePoint location="512,1411" />
+      <AbsolutePoint location="1033,1411" />
+      <AbsolutePoint location="1033,1303" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/order/getComment.do,liuyan,/order/liuyan_content.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="555,966" />
+      <AbsolutePoint location="555,1050" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/order/orderCommit.do,validate,/order/o,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="675,1518" />
+      <AbsolutePoint location="1291,1518" />
+      <AbsolutePoint location="1291,903" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/order/orderCommit.do,error,/order/orderError.html,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="512,1450" />
+      <AbsolutePoint location="512,1411" />
+      <AbsolutePoint location="1033,1411" />
+      <AbsolutePoint location="1033,1303" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

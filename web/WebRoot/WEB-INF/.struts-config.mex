@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/vCode.do" location="650,450" dimension="276,104" />
+  <StrutsActivity path="/test.do" location="50,650" dimension="233,104" />
+  <StrutsActivity path="/map.do" location="350,650" dimension="236,104" />
+  <StrutsActivity path="/order/search.do" location="350,150" dimension="248,104" />
+  <StrutsActivity path="/user/a/addBlock.do" location="950,1250" dimension="303,104" />
+  <StrutsActivity path="/advise.do" location="1250,450" dimension="247,104" />
+  <StrutsActivity path="index;6" location="350,850" dimension="122,96" />
+  <StrutsActivity path="/map/storeAndArea.jsp" location="650,1250" dimension="168,53" />
+  <StrutsActivity path="/map/store.jsp" location="950,650" dimension="118,53" />
+  <StrutsActivity path="/order/block_search_result.jsp" location="950,850" dimension="207,53" />
+  <StrutsActivity path="/order/store_search_result.jsp" location="50,1250" dimension="255,56" />
+  <StrutsActivity path="/static/adviseok.html" location="1250,1050" dimension="152,53" />
+  <StrutsActivity path="/static/adviseError.html" location="50,1450" dimension="167,53" />
+  <StrutsActivity path="/index.jsp" location="950,1050" dimension="108,56" />
+  <StrutsActivity path="/map.jsp" location="50,150" dimension="83,53" />
+  <StrutsActivity path="/user/registerOK.jsp" location="950,50" dimension="150,53" />
+  <StrutsActivity path="/user/register.jsp" location="650,250" dimension="132,53" />
+  <StrutsActivity path="/user/login.jsp" location="950,250" dimension="116,53" />
+  <StrutsActivity path="/order/areaList.jsp" location="350,450" dimension="140,53" />
+  <StrutsActivity path="/order/blockList.jsp" location="650,650" dimension="146,53" />
+  <StrutsActivity path="/order/storeList.jsp" location="50,850" dimension="144,53" />
+  <StrutsActivity path="/order/store.jsp" location="50,1050" dimension="125,53" />
+  <StrutsActivity path="/order/orderError.jsp" location="350,1050" dimension="158,53" />
+  <StrutsActivity path="/order/orderOk.jsp" location="650,1050" dimension="145,53" />
+  <StrutsActivity path="registerOK.jsp" location="650,50" dimension="115,53" />
+  <StrutsActivity path="/ordewr/blockList.jsp" location="50,450" dimension="155,53" />
+  <StrutsActivity path="block_search_result.jsp" location="650,850" dimension="164,53" />
+  <StrutsActivity path="/form/advise.jsp" location="1250,650" dimension="127,53" />
+  <StrutsActivity path="" location="1250,850" dimension="32,53" />
+  <StrutsTransition id="/advise.do,error,/static/adviseError.html,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1422,554" />
+      <AbsolutePoint location="1422,1476" />
+      <AbsolutePoint location="217,1476" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/map.do,store,/map/store.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="586,718" />
+      <AbsolutePoint location="1009,718" />
+      <AbsolutePoint location="1009,703" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/advise.do,ok,/static/adviseok.html,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1392,554" />
+      <AbsolutePoint location="1392,1050" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/order/search.do,blockList,/order/block_search_result.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="1053,876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/order/search.do,storeList,/order/store_search_result.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="474,202" />
+      <AbsolutePoint location="177,1278" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="index;6,null,/index.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/map.do,storeAndArea,/map/storeAndArea.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="468,702" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

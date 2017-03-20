@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 2.6//EN"
+        "http://tuckey.org/res/dtds/urlrewrite2.6.dtd">
+<urlrewrite>
+        <rule> 
+		    <from>/order/blockList_([0-9]+)_([a-zA-Z]+)</from> 
+		    <to>/order/blockList.do?area=$1&amp;fl=$2</to> 
+		</rule> 
+		<rule> 
+		    <from>/order/blockList_([0-9]+)</from> 
+		    <to>/order/blockList.do?area=$1</to> 
+		</rule> 
+		<rule> 
+		    <from>/order/storeList_([0-9]+)</from> 
+		    <to>/order/storeList.do?block=$1</to> 
+		</rule>
+		<rule> 
+		    <from>/order/store_([0-9]+)_([0-9]+)</from> 
+		    <to>/order/store.do?store=$1&amp;block=$2</to> 
+		</rule> 
+		<rule> 
+		    <from>/order/store_([0-9]+)</from> 
+		    <to>/order/store.do?store=$1</to> 
+		</rule> 
+		<rule> 
+		    <from>/order/getComment_([0-9]+)</from> 
+		    <to>/order/getComment.do?store=$1</to> 
+		</rule> 
+		<rule> 
+		    <from>/search_s/key_([\s\S]*)</from> 
+		    <to>/order/search.do?searchType=1&amp;KeyWord=$1</to> 
+		</rule>
+		<rule> 
+		    <from>/search_b/key_([\s\S]*)</from> 
+		    <to>/order/search.do?searchType=0&amp;KeyWord=$1</to> 
+		</rule>
+		
+</urlrewrite>

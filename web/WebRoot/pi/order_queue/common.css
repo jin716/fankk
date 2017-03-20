@@ -1,0 +1,267 @@
+.btn {
+	FONT-SIZE: 12px
+}
+.skin-gray .btn {
+	FONT-WEIGHT: normal
+}
+.skin-gray .long-btn {
+	FONT-WEIGHT: normal
+}
+.skin-gray .short-btn {
+	FONT-WEIGHT: normal
+}
+.order .sep-row TD {
+	BORDER-BOTTOM: #b4d5ff 1px solid; PADDING-BOTTOM: 5px !important; PADDING-LEFT: 0px !important; PADDING-RIGHT: 0px !important; PADDING-TOP: 5px !important
+}
+TR.order-hd TD {
+	BORDER-BOTTOM: #eee 1px solid; BORDER-LEFT: #b4d5ff 1px solid; PADDING-BOTTOM: 8px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: #b4d5ff 1px solid; BORDER-RIGHT: #b4d5ff 1px solid; PADDING-TOP: 8px
+}
+.order-ft TD {
+	BORDER-BOTTOM: #b4d5ff 1px solid; BORDER-LEFT: #b4d5ff 1px solid; BORDER-TOP: #b4d5ff 1px; BORDER-RIGHT: #b4d5ff 1px solid
+}
+.order .order-item TD {
+	BORDER-BOTTOM: #eee 1px solid
+}
+.order .order-item .order-price {
+	BORDER-LEFT: #eee 1px solid; BORDER-RIGHT: #b4d5ff 1px solid
+}
+.order .item {
+	BORDER-LEFT: #b4d5ff 1px solid
+}
+.order-hd {
+	BACKGROUND: #e8f2ff; COLOR: #404040
+}
+.order-hd .selector {
+	FLOAT: left
+}
+.order-hd .basic-info {
+	TEXT-ALIGN: left; FLOAT: left
+}
+.order-hd .basic-info .order-num {
+	WIDTH: 200px; DISPLAY: inline-block
+}
+.order-hd .basic-info .order-shop {
+	MARGIN-LEFT: 2em
+}
+.order-hd .basic-info .order-shop A {
+	ZOOM: 1; DISPLAY: inline-block; MAX-WIDTH: 250px; WHITE-SPACE: nowrap; VERTICAL-ALIGN: baseline; OVERFLOW: hidden; _display: inline; _width: 250px
+}
+.mall-order-icon {
+	POSITION: relative; TOP: 3px; LEFT: 5px
+}
+.order-hd .more-info {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 15px; PADDING-RIGHT: 8px; FLOAT: right; PADDING-TOP: 0px
+}
+.order-hd .status-info {
+	FLOAT: left; MARGIN-LEFT: 160px
+}
+.order-hd .contact {
+	TEXT-ALIGN: left; MARGIN-TOP: -5px; FLOAT: left; HEIGHT: 16px
+}
+.expand .expander {
+	DISPLAY: none
+}
+.order .expander TD {
+	BORDER-TOP-COLOR: #eee; BACKGROUND: #f6f6f6
+}
+.order .expander A {
+	PADDING-LEFT: 10px; BACKGROUND: url(http://img08.taobaocdn.com/tps/i8/T1oiJuXfJlXXXXXXXX-7-4.png) no-repeat left 5px
+}
+.order .extra {
+	DISPLAY: none
+}
+.expand .extra {
+	DISPLAY: block
+}
+
+.display-detail .order-hd:hover {
+	BACKGROUND-COLOR: #e0ecff
+}
+.hidden-detail .order-hd:hover {
+	BACKGROUND-COLOR: #e0ecff
+}
+.hidden-detail .order-hd {
+	BACKGROUND-POSITION: 400px -290px
+}
+.hidden-detail .order-hd:hover {
+	BACKGROUND-POSITION: 400px -90px
+}
+.display-detail .order-hd:hover {
+	BACKGROUND-POSITION: 400px 10px
+}
+.hidden-detail .pic-info {
+	DISPLAY: none
+}
+.hidden-detail .txt-info .props {
+	DISPLAY: none
+}
+.hidden-detail .txt-info .misc {
+	DISPLAY: none
+}
+.hidden-detail .order-price .post-info {
+	DISPLAY: none
+}
+.hidden-detail .order-item TD {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 5px
+}
+.hidden-detail .order-item .item .txt-info {
+	MARGIN-LEFT: 0px
+}
+.order-ft .contact {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; MARGIN-TOP: -3px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FLOAT: left; HEIGHT: 16px; PADDING-TOP: 5px
+}
+.order-ft .contact .nickname {
+	MARGIN-RIGHT: 10px
+}
+.order-ft .contact .shopname {
+	MARGIN-RIGHT: 10px
+}
+.order-ft .contact .name {
+	MARGIN-RIGHT: 10px
+}
+.order-ft .contact .name {
+	COLOR: #404040
+}
+.order-hd .contact SPAN {
+	MARGIN-RIGHT: 10px
+}
+.order .contact .name IMG {
+	MARGIN-RIGHT: 3px
+}
+.order-ft .deal-time {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FLOAT: left; HEIGHT: 16px; COLOR: #404040; PADDING-TOP: 5px
+}
+.order-item TD {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; VERTICAL-ALIGN: top; PADDING-TOP: 10px
+}
+.order-item .price {
+	COLOR: #404040
+}
+.order-item .num {
+	COLOR: #404040
+}
+.order-item .price {
+	TEXT-ALIGN: right; PADDING-RIGHT: 5px
+}
+.order-item .item .pic-info {
+	FLOAT: left; MARGIN-RIGHT: 5px
+}
+.order-item .pic-info .pic {
+	BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none; OVERFLOW: hidden
+}
+.order-item .item .txt-info {
+	TEXT-ALIGN: left; LINE-HEIGHT: 18px; MARGIN-LEFT: 55px
+}
+.order-item .item .desc A.xiaobao {
+	POSITION: relative; WIDTH: 16px; MARGIN-LEFT: 3px; TOP: 2px
+}
+.order-item .item .props {
+	WIDTH: 240px
+}
+.order-item .item .misc {
+	WIDTH: 240px
+}
+.order-item .item .props SPAN {
+	MARGIN-RIGHT: 15px
+}
+TR.order-item .order-price {
+	PADDING-BOTTOM: 5px; LINE-HEIGHT: 18px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: middle; PADDING-TOP: 10px
+}
+.order-item .order-price STRONG {
+	COLOR: #f50; FONT-SIZE: 18px; FONT-WEIGHT: normal
+}
+.order-item .order-price .post-info {
+	LINE-HEIGHT: 22px; COLOR: #404040
+}
+.order .order-item .order-price .post-info {
+	LINE-HEIGHT: 18px
+}
+.order-hd .trade-status {
+	FLOAT: right; COLOR: #404040
+}
+.order-ft .trade-status {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; FLOAT: right; COLOR: #404040; FONT-SIZE: 14px; PADDING-TOP: 5px
+}
+.trade-actions {
+	FLOAT: right
+}
+.trade-status .wait {
+	COLOR: #404040
+}
+.trade-status .todo {
+	COLOR: #404040
+}
+.trade-status .success {
+	COLOR: #066601
+}
+.trade-status .closed {
+	COLOR: #808080
+}
+.trade-status .charging {
+	COLOR: #f60
+}
+.trade-status .charging-anim {
+	PADDING-BOTTOM: 0px; MARGIN: 10px 0px 12px; PADDING-LEFT: 22px; PADDING-RIGHT: 0px; DISPLAY: block; BACKGROUND: url(img/loading.gif) no-repeat 0px 2px; FONT-SIZE: 14px; PADDING-TOP: 0px
+}
+.trade-status A:hover STRONG {
+	COLOR: #f50
+}
+.order-item TD.trouble {
+	PADDING-LEFT: 0px !important; PADDING-RIGHT: 0px !important
+}
+.refund-status {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: block; PADDING-TOP: 0px
+}
+.refund-doing {
+	PADDING-LEFT: 18px; BACKGROUND:  url(image/msg_bg.png) no-repeat 8px -150px
+}
+.pre-apply-refund {
+	COLOR: #404040 !important
+}
+.order-ft .status-info {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FLOAT: right; MARGIN-RIGHT: 10px; PADDING-TOP: 5px
+}
+.refund-reason {
+	DISPLAY: block
+}
+.memo-flag {
+	POSITION: relative; OUTLINE-STYLE: none; MARGIN-LEFT: 5px; TOP: 2px
+}
+.page-nav LI {
+	LINE-HEIGHT: 20px; FLOAT: left; COLOR: #666; MARGIN-LEFT: 3px
+}
+.page-nav LI A {
+	BORDER-BOTTOM: #ccc 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #ccc 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; DISPLAY: block; BACKGROUND: #fff; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid; PADDING-TOP: 0px
+}
+.page-nav .curr-page A {
+	BORDER-BOTTOM: #91aaed 1px solid; BORDER-LEFT: #91aaed 1px solid; BACKGROUND: #0196ce; COLOR: #fff !important; BORDER-TOP: #91aaed 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #91aaed 1px solid
+}
+.page-nav .prev-page A {
+	TEXT-INDENT: -9999px; WIDTH: 8px; BACKGROUND: url(image/page_nav.gif) #fff no-repeat 7px -15px; OVERFLOW: hidden
+}
+.page-nav .next-page A {
+	TEXT-ALIGN: left; WIDTH: 45px; BACKGROUND: url(image/page_nav.gif) #fff no-repeat 45px 5px
+}
+.page-nav .prev-page .disabled {
+	BACKGROUND-POSITION: 7px -35px; CURSOR: default
+}
+.page-nav .next-page .disabled {
+	BACKGROUND-POSITION: 45px -55px; COLOR: #7f7f7f !important; CURSOR: default; TEXT-DECORATION: none !important
+}
+
+
+#J_Dialog_mask {
+	Z-INDEX: 9998
+}
+#J_Dialog_c {
+	Z-INDEX: 9999
+}
+.sep-row TD {
+	HEIGHT: 10px
+}
+.flow-steps {
+	ZOOM: 1
+}
+.s50 IMG {
+	_height: 50px; _width: 50px
+}

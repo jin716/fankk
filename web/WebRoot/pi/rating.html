@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>无标题文档</title>
+
+		<link href="css/g.base.v51.css" rel="stylesheet" type="text/css" />
+		<link href="css/pi.css" rel="stylesheet" type="text/css" />
+
+		<script type="text/javascript" src="js/yahoo-dom-event.js"></script>
+		<script type="text/javascript" src="js/selector-min.js"></script>
+		<script type="text/javascript" src="js/event-delegate-min.js"></script>
+
+		<script type="text/javascript">
+(function() {
+	var last;  
+	
+	var Dom=YAHOO.util.Dom,
+		Event=YAHOO.util.Event,
+		CE=YAHOO.util.CustomEvent;
+	
+	var onClick = function (event, matchedEl, container) {
+		if (Dom.generateId(matchedEl)!="star_info"){
+			var current_id;
+			current_id=Dom.generateId(matchedEl);
+			Dom.removeClass(last, Dom.generateId(last)+'-on');
+			Dom.addClass(matchedEl, current_id+'-on');
+			last=matchedEl;
+			
+			var temp=document.getElementById("review_form_star");
+			temp.value=document.getElementById(current_id).value;
+			
+			temp=document.getElementById("star_info");
+			Dom.addClass("star_info", "hover");
+			temp.innerHTML=document.getElementById(current_id).title;
+		}
+	}
+	
+	var onMouseOver = function (event, matchedEl, container) {
+		if (Dom.generateId(matchedEl)!="star_info"){
+			Dom.removeClass(last, Dom.generateId(last)+'-on');
+			var temp=document.getElementById("star_info");
+			temp.innerHTML=document.getElementById(Dom.generateId(matchedEl)).title;
+		}
+	}
+	
+	var onMouseOut = function (event, matchedEl, container) {
+		if (Dom.generateId(matchedEl)!="star_info"){
+			Dom.addClass(last, Dom.generateId(last)+'-on');
+			var temp=document.getElementById("star_info");
+			if (last==null){
+				temp.innerHTML="点击星星为商户打分";
+			}
+			else{
+				temp.innerHTML=document.getElementById(Dom.generateId(last)).title;
+			}
+		}
+	}
+
+	Event.delegate("con", "click", onClick, "li");
+	Event.delegate("con", "mouseover", onMouseOver, "li");
+	Event.delegate("con", "mouseout", onMouseOut, "li");
+
+
+
+})();
+</script>
+	</head>
+
+	<body>
+		<div id="con" class="con" style="width: 600px;">
+			<div id="$review_overall_3642082" class="rating">
+				<label>
+					总体评价
+					<span class="Star">*</span>:
+				</label>
+				<div id="wp" class="wp">
+					<ul id="box_starRating" class="box starRating">
+						<li id="s1" class="s1" alt="很差" title="很差" value="10">
+							1星
+						</li>
+						<li id="s2" class="s2" alt="差" title="差" value="20">
+							2星
+						</li>
+						<li id="s3" class="s3" alt="还行" title="还行" value="30">
+							3星
+						</li>
+						<li id="s4" class="s4" alt="好" title="好" value="40">
+							4星
+						</li>
+						<li id="s5" class="s5" alt="很好" title="很好" value="50">
+							5星
+						</li>
+						<li id="star_info" class="info ">
+							点击星星为商户打分
+						</li>
+						<li class="data">
+							<input id="review_form_star" type="hidden" value="0"
+								autocomplete="off" />
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="formBody">
+				<a href="#top" class="itop"></a>
+				<table>
+					<tbody>
+						<tr class="score">
+							<td valign="top">
+								口味
+								<span class="Star">*</span>:&nbsp;&nbsp;
+								<select id="$review_form_s1">
+									<option value="-1">
+										请选择
+									</option>
+									<option value="0">
+										差(0)
+									</option>
+									<option value="1">
+										一般(1)
+									</option>
+									<option value="2">
+										好(2)
+									</option>
+									<option value="3">
+										很好(3)
+									</option>
+									<option value="4">
+										非常好(4)
+									</option>
+								</select>
+								<p>
+									<span id="$fv_review_form_s1"></span>
+								</p>
+							</td>
+							<td valign="top">
+								环境
+								<span class="Star">*</span>:&nbsp;&nbsp;
+								<select id="$review_form_s2">
+									<option value="-1">
+										请选择
+									</option>
+									<option value="0">
+										差(0)
+									</option>
+									<option value="1">
+										一般(1)
+									</option>
+									<option value="2">
+										好(2)
+									</option>
+									<option value="3">
+										很好(3)
+									</option>
+									<option value="4">
+										非常好(4)
+									</option>
+								</select>
+								<p>
+									<span id="$fv_review_form_s2"></span>
+								</p>
+							</td>
+							<td valign="top">
+								服务
+								<span class="Star">*</span>:&nbsp;&nbsp;
+								<select id="$review_form_s3">
+									<option value="-1">
+										请选择
+									</option>
+									<option value="0">
+										差(0)
+									</option>
+									<option value="1">
+										一般(1)
+									</option>
+									<option value="2">
+										好(2)
+									</option>
+									<option value="3">
+										很好(3)
+									</option>
+									<option value="4">
+										非常好(4)
+									</option>
+								</select>
+								<p>
+									<span id="$fv_review_form_s3"></span>
+								</p>
+							</td>
+							<td valign="top">
+								人均:&nbsp;&nbsp;￥
+								<input id="$review_form_ap" type="text" size="6" maxlength="10" />
+								<p class="l">
+									<span id="$fv_review_form_ap"></span>
+								</p>
+							</td>
+						</tr>
+						<tr class="content">
+							<td colspan="4">
+								<p>
+									评价
+									<span class="Star">*</span>:
+									<sub>(50-2000个字)</sub>
+								</p>
+								<textarea id="$review_form_body" cols="94" rows="11"></textarea>
+							</td>
+						</tr>
+						<tr class="contentInfo">
+							<td colspan="2">
+								<span class="tip" id="$fv_review_form_body"></span>
+							</td>
+							<td colspan="2">
+								<span id="$fv_review_form_asbody">&nbsp;<span>
+							</td>
+						</tr>
+						<tr class="contentInfo">
+							<td colspan="2">
+								<input type="button" onclick="" value="提交"/>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+	</body>
+</html>

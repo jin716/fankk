@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+.sstar0,.sstar5,.sstar10,.sstar20,.sstar30,.sstar35,.sstar40,.sstar45,.sstar50{margin-right:10px;}
+
+.star10,.star20,.star30,.star40,.star45,.star50,.newpic,.good,.bad,.sstar0,.sstar5,.sstar10,.sstar20,.sstar30,.sstar35,.sstar40,.sstar45,.sstar50,
+.msstar0,.msstar5,.msstar10,.msstar20,.msstar30,.msstar35,.msstar40,.msstar45,.msstar50{ background-image:url(../image/g.remark.v10.png);background-repeat:no-repeat;}
+
+.star10,.star20,.star30,.star40,.star45,.star50,.newpic,.sstar0,.sstar5,.sstar10,.sstar20,.sstar30,.sstar35,.sstar40,.sstar45,.sstar50,
+.msstar0,.msstar5,.msstar10,.msstar20,.msstar30,.msstar35,.msstar40,.msstar45,.msstar50,
+.star10,.star20,.star30,.star40,.star45,.star50,.star60{display:-moz-inline-box;display:inline-block;*display:inline;zoom:1;*margin-right:3px;vertical-align:middle;position:relative; font-size:0px;}
+
+.star10{ background-position:0 -320px; width:16px; height:16px;}
+.star20{ background-position:0 -280px; width:30px; height:16px;}
+.star30{ background-position:0 -240px; width:44px; height:16px;}
+.star40{ background-position:0 -200px; width:58px; height:16px;}
+.star45{ background-position:-200px -760px; width:72px; height:16px;}
+.star50{ background-position:0 -160px; width:72px; height:16px;}
+.star60{ background:url(../image/ul60.gif) no-repeat; width:17px; height:14px;}
+.sstar0,.sstar5,.sstar10,.sstar20,.sstar30,.sstar35,.sstar40,.sstar45,.sstar50
+{width:80px; height:16px;}
+.sstar0{ background-position:-199px -680px; }
+.sstar5{ background-position:-200px -560px; }
+.sstar10{ background-position:-200px -520px; }
+.sstar20{ background-position:-200px -480px;}
+.sstar30{ background-position:-200px -440px;}
+.sstar35{ background-position:-200px -400px;}
+.sstar40{ background-position:-200px -360px;}
+.sstar45{ background-position:-200px -320px;}
+.sstar50{ background-position:-200px -280px;}
+
+.msstar0,.msstar5,.msstar10,.msstar20,.msstar30,.msstar35,.msstar40,.msstar45,.msstar50
+{ width:64px; height:12px;}
+.msstar0{ background-position:-199px -1105px; }
+.msstar5{ background-position:0 -1142px; }
+.msstar10{ background-position:-199px -1071px; }
+.msstar20{ background-position:-199px -1037px;}
+.msstar30{ background-position:-199px -1003px;}
+.msstar35{ background-position:0 -1107px;}
+.msstar40{ background-position:0 -1073px;}
+.msstar45{ background-position:0 -1038px;}
+.msstar50{ background-position:0 -1003px;}
+
+.good{ background-position:0 -400px; width:19px; height:19px; float:left;}
+.bad{ background-position:0 -440px; width:19px; height:19px;float:left;}
+.newpic{ width:22px; height:11px;background-position:0 -360px;}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE form-validation PUBLIC "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.0.1//EN" 
+"validator_1_0_1.dtd" >
+<form-validation>
+	<formset>
+		<form name="registerForm">
+			<field property="userName" depends="required,minlength,maxlength">
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>2</var-value>
+				</var>
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>15</var-value>
+				</var>
+				<message>昵称不得为空，长度4-15字符</message>  
+			</field>
+			<field property="userPassword" depends="required,minlength,maxlength">
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>6</var-value>
+				</var>
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>16</var-value>
+				</var>
+				<message>密码不得为空，长度6-16</message>  
+			</field>
+			<field property="userEmail" depends="required,email">
+				<message>1</message>  
+			</field>
+			<field property="vcode" depends="required">
+				<message>1</message>  
+			</field>
+			<field property="userTele" depends="required,minlength,maxlength,long">
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>11</var-value>
+				</var>
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>11</var-value>
+				</var>
+				<message>电话不得为空</message>  
+			</field>
+		</form>
+	</formset>
+</form-validation>

@@ -1,0 +1,268 @@
+﻿@charset "utf-8";
+/*
+*	常规css调用代码,不包括任何功能及布局性代码.
+*   
+*   PS:非CSS方法请勿添加;
+*
+*   2008-06-17
+*/
+
+	/*
+	* 页面初始化标签
+	*
+	*
+	*/
+	html,body,div,dl,dt,dd,ul,
+	ol,li,h1,h2,h3,h4,h5,h6,pre,
+	form,fieldset,input,p,blockquote,table,th,td{margin:0px;padding:0px;}  /**初始化边框**/
+	img,body,html{border:0;}	/*无外框*/
+	body,table,tr,td,ul,li{font-size:12px;font-family:Arial,Helvetica,sans-serif;}
+	ul{list-style-type:none;}
+	li{list-style-type:none; line-height:22px;}
+	div{word-break:break-all;white-space:normal;} /*模认DIV标签自动换行*/
+	a:link,a:visited{color:#666;text-decoration:underline;}
+	a:hover,a:active{color:#ff6600;text-decoration:underline;}	
+	input,select{font-size:12px;}  /* 初始化Firefox字体偏小问题 */
+	.black_link:link,.black_link:visited,.black_link:hover{color:#000;text-decoration:underline; font-weight:none}
+	.black_link:hover{text-decoration:underline;}
+	.white_link:link,.white_link:visited,.white_link:hover{color:#fff;text-decoration:underline; font-weight:none}
+	.white_link:hover{text-decoration:underline;}
+	.red_link:link,.red_link:visited,.red_link:hover{color:red;text-decoration:underline; font-weight:none}
+	.red_link:hover{text-decoration:underline;}
+	.cf60_link:link,.cf60_link:visited{color:#f60; text-decoration:underline; font-weight:none}
+	.cf60_link:hover{color:#f60; text-decoration:underline;font-weight:none}
+	.c999_link:link,.c999_link:visited,.c999_link:hover{color:#999;text-decoration:underline; font-weight:none}
+	.c999_link:hover{text-decoration:underline;}
+	.noun_link:hover,.noun_link:link,.noun_link:visited{text-decoration:none;}
+	/*
+	* 生成占行符 spacer_X
+	*
+	*
+	*<div class="spacer_XX"></div>
+	*/
+	.spacer_1{font-size:0;line-height:0;width:1px;height:1px;clear:both;}
+	.spacer_2{font-size:0;line-height:0;width:2px;height:2px;clear:both;}
+	.spacer_3{font-size:0;line-height:0;width:3px;height:3px;clear:both;}
+	.spacer_5{font-size:0;line-height:0;width:5px;height:5px;clear:both;}
+	.spacer_7{font-size:0;line-height:0;width:7px;height:7px;clear:both;}
+	.spacer_10{font-size:0;line-height:0;width:10px;height:10px;clear:both;}
+	.spacer_15{font-size:0;line-height:0;width:15px;height:15px;clear:both;}
+	.spacer_20{font-size:0;line-height:0;width:20px;height:20px;clear:both;}
+	.spacer_35{font-size:0;line-height:0;width:35px;height:35px;clear:both;}
+
+	.k1{width:1px; height:1px; float:left;}
+	.k2{width:2px; height:2px; float:left;}
+	.k3{width:3px; height:3px; float:left;}
+	.k5{width:5px; height:5px; float:left;}
+	.k7{width:7px; height:7px; float:left;}
+	.k10{width:10px; height:10px; float:left;}
+	.k15{width:15px; height:15px; float:left;}
+	.k20{width:20px; height:20px; float:left;}
+	.k35{width:35px; height:35px; float:left;}
+	/*
+	 * css截字方法
+	 * showXX XX代表保留字符数 12px/字 计算
+	 * width=字体大小像数(12px)*汉字个数
+	 * 使用show时标签width必需设定
+	 * <div class="showXX"></div>
+	 * <a>与<span>无效
+	*/
+	.show35{width:240px;
+		white-space:nowrap;
+		text-overflow:ellipsis; 
+		overflow: hidden}
+	.show20{width:240px;
+		white-space:nowrap;
+		text-overflow:ellipsis; 
+		overflow: hidden}
+	.show15{width:180px;
+		white-space:nowrap;
+		text-overflow:ellipsis; 
+		overflow: hidden}
+	.show9{width:110px;
+		white-space:nowrap;
+		text-overflow:ellipsis; 
+		overflow: hidden}
+	.show5{width:60px;
+		white-space:nowrap;
+		text-overflow:ellipsis; 
+		overflow: hidden}
+	.show{
+		white-space:nowrap;
+		text-overflow:ellipsis; 
+		overflow: hidden}
+	
+	/*
+	*   fontXX 定义字体大小
+	*	
+	*
+	* 	class
+	*/
+	.font12{font-size:12px}
+	.font13{font-size:13px}
+	.font14{font-size:14px}
+	.font16{font-size:16px}
+	.font18{font-size:18px}
+	.font20{font-size:20px}
+	
+	
+	/*
+	*
+	*	W3C 十六色代码
+	*	
+	*	class
+	*	更多http://www.52css.com/css/z_color.html
+	*/
+	
+	.black{color:#000000}
+	.white{color:#ffffff}
+	.red{color:#ff0000}
+	.yellow{color:#ffff00}
+	.lime{color:#00ff00}
+	.Aqua{color:#00ffff}
+	.Blue{color:#0000ff}
+	.Fuchsia{color:#ff00ff}
+	.Gray{color:#808080}
+	.Silver{color:#c0c0c0}
+	.Maroon{color:#800000}
+	.Olive{color:#808000}
+	.Green{color:#008000}
+	.Teal{color:#008080}
+	.Navy{color:#000080}
+	.Purple{color:#800080}
+	.Transparent{color:none transparent scroll repeat 0% 0%} /**透色***/
+	.cff962f{ color:#ff962f;}
+	.c666{ color:#666666;}
+	.c999{ color:#999999;}
+	.c4b8618{ color:#4b8618;}
+	.cf60{ color:#ff6600;}
+	.cccc{ color:#cccccc;}
+	
+	/*
+	* 预定义li高与行高
+	*
+	*
+	* class
+	*/
+	.li30{height:25px;line-height:25px;vertical-align:middle}
+	.li25{height:25px;line-height:25px;vertical-align:middle}
+	.li22{height:22px;line-height:22px;vertical-align:middle}
+	.li20{height:20px;line-height:20px;vertical-align:middle}
+	.li18{height:18px;line-height:18px;vertical-align:middle}
+	.li15{height:10px;line-height:10px;vertical-align:middle}
+	
+	/*
+	* lineXX
+	*
+	* 预定行高
+	* class
+	*/
+	.line12{line-height:12px;}
+	.line14{line-height:14px;}
+	.line16{line-height:16px;}
+	.line18{line-height:18px;}
+	.line20{line-height:20px;}
+	.line22{line-height:22px;}
+	.line24{line-height:24px;}
+	.line28{line-height:28px;}
+	.line30{line-height:30px;}
+	
+	/*
+	*	常用样式操作
+	*
+	*
+	* class
+	*/
+	.vtop{vertical-align:top}	 		/**居顶**/
+	.vbottom{vertical-align:bottom} 	/**居中**/
+	.vmiddle{vertical-align:middle}		/**居顶**/
+	/*****必需设有行高才能使用以上方法*****/
+	
+	.left{float:left}					/**左对齐**/
+	.right{float:right}					/**右对齐**/
+	/*****以上对象对齐方法*****/
+	
+	.leftText{text-align:left}			/**内容左对齐**/
+	.centerText{text-align:center}		/**内容居中对齐**/
+	.rightText{text-align:right}		/**内容右对齐**/
+	/*****以上内容对齐方法*****/
+	
+	.clear{clear:both}					/**清除飘浮**/
+	.clearleft{clear:left}				/**清除左飘浮**/
+	.clearright{clear:right}			/**清除左飘浮**/
+	/*****清除飘浮操作*****/
+	
+	.font_bold{font-weight:bold}		/**字体加粗**/
+	.no_bold{font-weight:normal}		/**取消加粗**/
+	.del_line{text-decoration:line-through}	/**删除线**/
+	.frist_text{text-indent:24px;}
+	/*********字体方法*********/
+	
+	/*
+	*	对象显隐
+	*
+	*
+	*/
+	.display{display:block}				/**显示对象**/
+	.hidden{display:none}				/**隐藏对象**/
+	.overflow{overflow:hidden}			/**溢出隐藏**/
+	.overflow-x{overflow:hidden}		/**隐藏X轴对象**/
+	.overflow-y{overflow:hidden}		/**隐藏Y轴对象**/
+	/*******其它********/
+	
+	/*
+	* 	鼠标手式样式
+	*	
+	*	class
+	*/
+	.mouse_hand{cursor:pointer}			/**手型**/
+	.mouse_pointer{cursor:pointer}		/**手型**/
+	.mouse_move{cursor:move}			/**移动十字型**/
+	.mouse_help{cursor:help}			/**帮助问号**/
+
+	/*
+	*	背景样式
+	*	
+	*
+	* class
+	*/
+
+	.no-repeat{background-repeat:no-repeat}	/**背景不平铺**/
+	.repeat{background-repeat:repeat}		/**背景平铺**/
+	.repext-x{background-repeat:repeat-x}	/**背景X轴平铺**/
+	.repext-y{background-repeat:repeat-y}	/**背景Y轴平铺**/
+	/*******背景平铺操作********/
+	
+	
+	/*
+	*  CSS画圆角层
+	*
+	*
+	*	实例代码下方
+	*/
+	
+	#xsnazzy{margin:1px;}
+	
+	.xtop, .xbottom {display:block; background:transparent; font-size:1px;}
+	.xb1, .xb2, .xb3, .xb4 {display:block; overflow:hidden;}
+	.xb1, .xb2, .xb3 {height:1px;}
+	.xb2, .xb3, .xb4 {background:#ccc; border-left:1px solid #08c; border-right:1px solid #08c;}
+	.xb1 {margin:0 5px; background:#08c;}
+	.xb2 {margin:0 3px; border-width:0 2px;}
+	.xb3 {margin:0 2px;}
+	.xb4 {height:2px; margin:0 1px;}
+	
+	.xboxcontent {display:block; background:#ccc; border:0 solid #08c; border-width:0 1px;}
+	
+	/***
+	<div id="xsnazzy">
+	<b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b>
+	<div class="xboxcontent">
+	
+	<h1>Snazzy Borders</h1>
+	
+	</div>
+	<b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b>
+	</div>
+	**************/
+	h3{ font-size:14px; font-weight:bold}   /**通用标题大小**/

@@ -1,0 +1,495 @@
+.item-list {
+	POSITION: relative; MARGIN: 2px auto 10px; COLOR: #808080; CLEAR: both
+}
+.item-list TH.price {
+	TEXT-ALIGN: right
+}
+.item-list-hd {
+	Z-INDEX: 9; POSITION: relative; HEIGHT: 25px; TOP: 6px
+}
+.item-list-tabs {
+	POSITION: relative; LEFT: 20px
+}
+.item-list-tabs LI {
+	POSITION: relative; TEXT-ALIGN: center; LINE-HEIGHT: 21px; WIDTH: 130px; BACKGROUND:  url(image/tabview_bg_flexible.png) no-repeat 0px 6px; FLOAT: left; HEIGHT: 27px; CURSOR: pointer; MARGIN-RIGHT: 3px; PADDING-TOP: 8px
+}
+.item-list-tabs .current {
+	BACKGROUND-POSITION: 0px -40px
+}
+.item-list-tabs .current A {
+	COLOR: #333; FONT-WEIGHT: bold
+}
+.item-list-tabs .current A:hover {
+	CURSOR: default; TEXT-DECORATION: none
+}
+.item-list-tabs A {
+	WIDTH: 130px; DISPLAY: block; COLOR: #111 !important
+}
+.item-list-tabs-flexible {
+	MARGIN-TOP: -2px; FLOAT: left
+}
+.item-list-tabs-flexible LI {
+	BACKGROUND:  url(image/tabview_bg_flexible.png) no-repeat
+}
+.item-list-tabs-flexible LI A {
+	BACKGROUND:  url(image/tabview_bg_flexible.png) no-repeat
+}
+.item-list-tabs-flexible LI {
+	WIDTH: auto; BACKGROUND-POSITION: 0px 8px; HEIGHT: 29px
+}
+.item-list-tabs-flexible LI A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 12px; WIDTH: auto; PADDING-RIGHT: 12px; BACKGROUND-POSITION: right -24px; FLOAT: left; HEIGHT: 24px; PADDING-TOP: 0px
+}
+.item-list-tabs-flexible .current {
+	BACKGROUND-POSITION: 0px -43px
+}
+.item-list-tabs-flexible .current A {
+	BACKGROUND-COLOR: transparent; MARGIN-TOP: -3px; BACKGROUND-POSITION: right -75px; HEIGHT: 24px; PADDING-TOP: 3px
+}
+.item-list-bd {
+	Z-INDEX: 8; POSITION: relative; CLEAR: both; BORDER-TOP: #aed2ff 1px solid; LEFT: 0px
+}
+.item-list-bd TABLE {
+	BORDER-COLLAPSE: collapse; TABLE-LAYOUT: fixed
+}
+.item-list-bd TH {
+	BORDER-BOTTOM: #aec7e5 1px solid; TEXT-ALIGN: center; BACKGROUND:  url(image/itemlist_bg.gif) repeat-x 0px 0px; HEIGHT: 29px; COLOR: #000
+}
+.item-list-bd TH.order-price EM {
+	Z-INDEX: 1; POSITION: absolute; TEXT-ALIGN: left; PADDING-BOTTOM: 0px; MARGIN-TOP: 22px; PADDING-LEFT: 3px; WIDTH: 220px; PADDING-RIGHT: 0px; BACKGROUND: url(image/price-editor-tip.png) no-repeat; HEIGHT: 27px; MARGIN-LEFT: -179px; PADDING-TOP: 8px
+}
+.item-list-bd TH.order-price EM A {
+	POSITION: absolute; TEXT-INDENT: -999em; WIDTH: 8px; HEIGHT: 8px; OVERFLOW: hidden; TOP: 14px; RIGHT: 6px
+}
+.item-list-col0 {
+	WIDTH: 25px
+}
+.item-list-col1 {
+	WIDTH: auto
+}
+.item-list-col2 {
+	WIDTH: 65px
+}
+.item-list-col3 {
+	WIDTH: 40px
+}
+.item-list-col4 {
+	WIDTH: 65px
+}
+.item-list-col5 {
+	WIDTH: 30px
+}
+.item-list-col6 {
+	WIDTH: 110px
+}
+.item-list-col7 {
+	WIDTH: 100px
+}
+.item-list-col8 {
+	WIDTH: 90px
+}
+.item-list-col9 {
+	WIDTH: 55px
+}
+.item-list .item-list-bd TABLE {
+	WIDTH: 100%
+}
+.item-list TD {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 8px; LINE-HEIGHT: 130%; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; OVERFLOW: hidden; PADDING-TOP: 8px
+}
+.item-list .desc IMG {
+	VERTICAL-ALIGN: middle
+}
+.item-list .price {
+	TEXT-ALIGN: right; PADDING-RIGHT: 5px
+}
+.order-ft .name {
+	POSITION: relative
+}
+
+.item-list .act TD {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 2px
+}
+.item-list .operations {
+	BORDER-BOTTOM: #dedee0 1px solid; POSITION: relative; TEXT-ALIGN: left; BORDER-LEFT: #dedee0 0px solid; LINE-HEIGHT: 28px; BACKGROUND: #f3f3f3; HEIGHT: 28px; BORDER-TOP: #dedee0 1px solid; BORDER-RIGHT: #dedee0 0px solid
+}
+.item-list .operations .show-hidden-orders {
+	POSITION: absolute; TOP: 0px; RIGHT: 0px
+}
+.item-list .operations .show-hidden-orders LABEL {
+	MARGIN-LEFT: 4px
+}
+.memo-flag {
+	TOP: -1px; LEFT: 0px
+}
+.item-list .all-selector {
+	MARGIN: 0px 8px 0px 6px
+}
+.item-list .selector {
+	MARGIN: 0px 8px 0px 6px
+}
+.item-list .operations LABEL {
+	COLOR: #404040; MARGIN-RIGHT: 18px
+}
+.item-list .operations A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 0px
+}
+.item-list .operations .page-nav {
+	POSITION: absolute; TOP: 3px; RIGHT: 4px
+}
+.item-list .operations .page-nav A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; PADDING-TOP: 0px
+}
+TR.order-hd TD {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 5px
+}
+TD.contact A.nickname {
+	WORD-WRAP: break-word
+}
+TD.contact .name {
+	MARGIN: 2px auto; DISPLAY: block
+}
+TD.trade-status {
+	PADDING-BOTTOM: 8px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 8px
+}
+TD.trade-status A {
+	MARGIN: 2px auto; DISPLAY: block
+}
+TD.remark A {
+	MARGIN: 2px auto; DISPLAY: block
+}
+TD.trade-status .status {
+	FONT-WEIGHT: normal
+}
+.order-item TD.order-price STRONG {
+	COLOR: #404040; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+TD.order-price A.modify-price {
+	MARGIN: 2px auto; DISPLAY: block
+}
+.post-info .view-logistics IMG {
+	POSITION: relative; TOP: 3px
+}
+.order .order-item TD.order-price {
+	BORDER-BOTTOM: #d4e7ff 1px solid; BORDER-LEFT: #eee 1px solid; BORDER-RIGHT: #eee 1px solid
+}
+.order .order-item TD.contact {
+	BORDER-BOTTOM: #d4e7ff 1px solid; BORDER-LEFT: #eee 1px solid; BORDER-RIGHT: #eee 1px solid
+}
+.order .order-item TD.trade-status {
+	BORDER-BOTTOM: #d4e7ff 1px solid; BORDER-LEFT: #eee 1px solid; BORDER-RIGHT: #eee 1px solid
+}
+.order .order-item TD.remark {
+	BORDER-BOTTOM: #d4e7ff 1px solid; BORDER-LEFT: #eee 1px solid; BORDER-RIGHT: #d4e7ff 1px solid
+}
+.order-item TD.price {
+	COLOR: #000
+}
+.order-item TD.num {
+	COLOR: #000
+}
+.order-item TD.contact .name {
+	COLOR: #000
+}
+.order-item TD.trade-status .wait {
+	COLOR: #000
+}
+#list-sold-items .order-item TD.num {
+	OVERFLOW: visible; FONT-WEIGHT: bold
+}
+#list-bought-items .order-item TD.num {
+	OVERFLOW: visible; FONT-WEIGHT: bold
+}
+.order TR.last TD {
+	BORDER-BOTTOM: #d4e7ff 1px solid
+}
+.order TR.sep-row TD {
+	BORDER-BOTTOM-COLOR: #d4e7ff
+}
+TR.order-hd TD {
+	BORDER-BOTTOM-COLOR: #eee; BORDER-TOP-COLOR: #d4e7ff; BORDER-RIGHT-COLOR: #d4e7ff; BORDER-LEFT-COLOR: #d4e7ff
+}
+.order .item {
+	BORDER-LEFT-COLOR: #d4e7ff
+}
+.order .sep-row TD {
+	BORDER-BOTTOM: #b4d5ff 1px solid; PADDING-BOTTOM: 3px !important; PADDING-LEFT: 0px !important; PADDING-RIGHT: 0px !important; PADDING-TOP: 3px !important
+}
+.order-item .order-price .post-info {
+	LINE-HEIGHT: normal; COLOR: #808080
+}
+.order-item TD.order-price {
+	VERTICAL-ALIGN: top !important
+}
+.order-item TD.contact {
+	VERTICAL-ALIGN: top !important
+}
+.order-item TD.remark {
+	VERTICAL-ALIGN: top !important
+}
+.order-item TD.trade-status {
+	VERTICAL-ALIGN: top !important
+}
+.refund-doing {
+	PADDING-LEFT: 22px
+}
+.order-item TD.remark {
+	PADDING-BOTTOM: 8px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 8px
+}
+.success-order TR.sep-row TD {
+	BORDER-BOTTOM-COLOR: #e6e6e6
+}
+.closed-order TR.sep-row TD {
+	BORDER-BOTTOM-COLOR: #e6e6e6
+}
+.success-order .order-hd TD {
+	BORDER-BOTTOM-COLOR: #eee; BORDER-TOP-COLOR: #e6e6e6; BORDER-RIGHT-COLOR: #e6e6e6; BORDER-LEFT-COLOR: #e6e6e6
+}
+.closed-order .order-hd TD {
+	BORDER-BOTTOM-COLOR: #eee; BORDER-TOP-COLOR: #e6e6e6; BORDER-RIGHT-COLOR: #e6e6e6; BORDER-LEFT-COLOR: #e6e6e6
+}
+.success-order .order-hd {
+	BACKGROUND: #f3f3f3
+}
+.closed-order .order-hd {
+	BACKGROUND: #f3f3f3
+}
+.success-order TR.last TD {
+	BORDER-BOTTOM: #e6e6e6 1px solid
+}
+.closed-order TR.last TD {
+	BORDER-BOTTOM: #e6e6e6 1px solid
+}
+.success-order .item {
+	BORDER-LEFT-COLOR: #e6e6e6
+}
+.closed-order .item {
+	BORDER-LEFT-COLOR: #e6e6e6
+}
+.success-order .order-item TD.remark {
+	BORDER-BOTTOM: #e6e6e6 1px solid; BORDER-LEFT: #eee 1px solid; BORDER-RIGHT: #e6e6e6 1px solid
+}
+.closed-order .order-item TD.remark {
+	BORDER-BOTTOM: #e6e6e6 1px solid; BORDER-LEFT: #eee 1px solid; BORDER-RIGHT: #e6e6e6 1px solid
+}
+.success-order .order-item TD.order-price {
+	BORDER-BOTTOM: #e6e6e6 1px solid
+}
+.success-order .order-item TD.contact {
+	BORDER-BOTTOM: #e6e6e6 1px solid
+}
+.success-order .order-item TD.trade-status {
+	BORDER-BOTTOM: #e6e6e6 1px solid
+}
+.closed-order .order-item TD.order-price {
+	BORDER-BOTTOM: #e6e6e6 1px solid
+}
+.closed-order .order-item TD.contact {
+	BORDER-BOTTOM: #e6e6e6 1px solid
+}
+.closed-order .order-item TD.trade-status {
+	BORDER-BOTTOM: #e6e6e6 1px solid
+}
+.order-item .item .props {
+	WIDTH: auto
+}
+.order-item .item .misc {
+	WIDTH: auto
+}
+.trade-actions {
+	FLOAT: none
+}
+TD.trouble A.xbcard {
+	MARGIN-TOP: 3px; DISPLAY: block
+}
+
+.taoke-entra {
+	POSITION: absolute; TOP: 6px; LEFT: 483px
+}
+.buyer-help-link {
+	POSITION: relative; MARGIN-TOP: -20px; FLOAT: right; RIGHT: 0px
+}
+.top-info-bar {
+	ZOOM: 1; OVERFLOW: hidden
+}
+.top-info-bar .help {
+	FLOAT: right
+}
+.top-info-bar .notice {
+	FLOAT: right
+}
+
+.bottom-buttons {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 0px; PADDING-RIGHT: 20px; BACKGROUND: #f2fdfd; OVERFLOW: hidden; PADDING-TOP: 10px
+}
+
+.bottom-buttons .get-recommend {
+	FLOAT: right
+}
+.bottom-buttons .get-recommend IMG {
+	POSITION: relative; TOP: 7px; LEFT: 5px
+}
+.memo-popup {
+	Z-INDEX: 99; BORDER-BOTTOM: #f7e4a5 1px solid; BORDER-LEFT: #f7e4a5 1px solid; PADDING-BOTTOM: 5px; PADDING-LEFT: 10px; WIDTH: 170px; PADDING-RIGHT: 10px; DISPLAY: none; BACKGROUND: #fffcf3; BORDER-TOP: #f7e4a5 1px solid; BORDER-RIGHT: #f7e4a5 1px solid; PADDING-TOP: 8px
+}
+
+* + HTML .item-list {
+	MARGIN-TOP: 10px
+}
+.item-list-hd {
+	TOP: -4px; _top: 6px
+}
+.item-list-bd TABLE {
+	POSITION: relative
+}
+#main-content {
+
+}
+.item-list-col8 {
+	WIDTH: 81px; _width: 79px
+}
+.item-list .operations {
+	ZOOM: 1
+}
+.all-selector {
+	MARGIN-LEFT: 0px
+}
+.selector {
+	MARGIN-LEFT: 0px
+}
+* + HTML .popup-info-box {
+	LEFT: 88px
+}
+.popup-info-box HR {
+	MARGIN: 0px
+}
+.popup-info-box .bt-r {
+	_right: 1px
+}
+.popup-info-box .user-info-table {
+	_width: 200px
+}
+.taoke-entra {
+	LEFT: 485px; _width: 281px
+}
+.bottom-buttons {
+	ZOOM: 1
+}
+.item-list .all-selector {
+	MARGIN: 0px 8px 0px 3px; _margin: 2px 8px 0 4px
+}
+.item-list .selector {
+	MARGIN: -2px 8px 0px 2px
+}
+.order .sep-row TD {
+	HEIGHT: 6px
+}
+.memo-flag {
+	TOP: 3px
+}
+.item-list .item-list-hd .mytb-order {
+	LINE-HEIGHT: 18px; MARGIN: 7px 0px 0px 25px; PADDING-RIGHT: 16px; DISPLAY: inline; BACKGROUND:  url(image/T1QJ0nXaVFXXXXXXXX-70-42.png) no-repeat 76px -27px; FLOAT: left; HEIGHT: 18px; OVERFLOW: hidden; PADDING-TOP: 2px; _padding-top: 0
+}
+.item-list .item-list-hd .online-shop-order {
+	LINE-HEIGHT: 18px; MARGIN: 7px 0px 0px 25px; PADDING-RIGHT: 16px; DISPLAY: inline; BACKGROUND:  url(image/T1QJ0nXaVFXXXXXXXX-70-42.png) no-repeat 76px -27px; FLOAT: left; HEIGHT: 18px; OVERFLOW: hidden; PADDING-TOP: 2px; _padding-top: 0
+}
+.item-list .item-list-hd .mytb-order {
+	BACKGROUND-POSITION: 110px -27px
+}
+.online-shop .col-main {
+	WIDTH: 770px
+}
+.online-shop #mytaobao-panel .main-wrap {
+	MARGIN-LEFT: 0px
+}
+.online-shop #trade-search-box .col-combine .trade-status {
+	WIDTH: 184px; MARGIN-RIGHT: 15px
+}
+.online-shop #trade-search-box .col3 .skin-gray {
+	MARGIN-LEFT: 25px
+}
+.online-shop .item-list-bd .item-list-col4 {
+	WIDTH: 95px
+}
+.online-shop .item-list-bd .item-list-col8 {
+	WIDTH: 145px
+}
+.online-shop .item-list-bd .basic-info .order-num {
+	MARGIN-LEFT: 9px
+}
+.online-shop .item-list-bd .basic-info .source {
+	MARGIN-LEFT: 40px
+}
+.online-shop .item-list-bd .trade-actions .skin-gray A {
+	LINE-HEIGHT: 20px; MARGIN-TOP: 5px; WIDTH: 70px; BACKGROUND: url(image/T1QJ0nXaVFXXXXXXXX-70-42.png) #06f no-repeat 0px 0px; HEIGHT: 20px; COLOR: #fff
+}
+
+.icon-3c EM {
+	MARGIN-TOP: 5px; TEXT-INDENT: -9999px; DISPLAY: inline-block; COLOR: #fff; OVERFLOW: hidden
+}
+.item-list .skin-gray .longer {
+	POSITION: relative; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 115px; PADDING-RIGHT: 0px; BACKGROUND-POSITION: 54px -660px; PADDING-TOP: 0px
+}
+.item-list .skin-blue .longer {
+	POSITION: relative; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 115px; PADDING-RIGHT: 0px; BACKGROUND-POSITION: 54px -660px; PADDING-TOP: 0px
+}
+.item-list .skin-blue .longer {
+	BACKGROUND-POSITION: 54px -630px
+}
+.item-list .skin-gray .longer B {
+	POSITION: absolute; WIDTH: 58px; BACKGROUND:  url(image/btn_bg.png) no-repeat 0px -660px; HEIGHT: 21px; TOP: 0px; LEFT: 0px
+}
+.item-list .skin-blue .longer B {
+	POSITION: absolute; WIDTH: 58px; BACKGROUND: url(image/btn_bg.png) no-repeat 0px -660px; HEIGHT: 21px; TOP: 0px; LEFT: 0px
+}
+.item-list .skin-blue .longer B {
+	BACKGROUND-POSITION: 0px -630px
+}
+.item-list .skin-gray .longer SPAN {
+	POSITION: relative
+}
+.item-list .skin-blue .longer SPAN {
+	POSITION: relative
+}
+.item-list .skin-gray .longer:hover SPAN {
+	TEXT-DECORATION: underline
+}
+.item-list .skin-blue .longer:hover SPAN {
+	TEXT-DECORATION: underline
+}
+.item-list .skin-gray .longer-small {
+	WIDTH: 90px
+}
+.item-list .skin-blue .longer-small {
+	WIDTH: 90px
+}
+.item-list .skin-gray .longer-small {
+	BACKGROUND-POSITION: 28px -660px
+}
+.item-list .skin-blue .longer-small {
+	BACKGROUND-POSITION: 28px -630px
+}
+.item-list-tabs .current .tips {
+	BORDER-BOTTOM: #ddd 1px solid; POSITION: absolute; TEXT-ALIGN: left; BORDER-LEFT: #ddd 1px solid; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #fffada; PADDING-LEFT: 4px; WIDTH: auto; PADDING-RIGHT: 4px; DISPLAY: block; WHITE-SPACE: nowrap; COLOR: #404040; BORDER-TOP: #ddd 1px solid; TOP: -24px; CURSOR: text; BORDER-RIGHT: #ddd 1px solid; PADDING-TOP: 0px; LEFT: 0px
+}
+.item-list-tabs .current .tips A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; DISPLAY: inline; BACKGROUND: none transparent scroll repeat 0% 0%; FLOAT: none; HEIGHT: auto; COLOR: #999 !important; FONT-WEIGHT: bold; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+.item-list-tabs .current .tips I {
+	POSITION: absolute; WIDTH: 12px; BACKGROUND: url(image/T1vDRqXcpgXXXXXXXX-12-6.png) no-repeat 0px 0px; HEIGHT: 6px; TOP: 21px; LEFT: 10px
+}
+.pop-upshelf {
+	Z-INDEX: 100; BORDER-BOTTOM: #c4d5e0 1px solid; MIN-WIDTH: 200px; BORDER-LEFT: #c4d5e0 1px solid; BACKGROUND-COLOR: #fff; BORDER-TOP: #c4d5e0 1px solid; BORDER-RIGHT: #c4d5e0 1px solid; _width: 200px
+}
+.pop-upshelf .hd {
+	BORDER-BOTTOM: #c4d5e0 1px solid
+}
+.pop-upshelf .hd H3 {
+	LINE-HEIGHT: 21px; MARGIN: 1px; PADDING-LEFT: 10px; BACKGROUND: url(image/mytaobao_v3_bg.png) #ebf1f4 repeat-x center -300px; HEIGHT: 21px; FONT-SIZE: 12px
+}
+.pop-upshelf .bd {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 10px
+}
+.pop-upshelf .bd UL {
+	LINE-HEIGHT: 2; MARGIN-BOTTOM: 6px
+}

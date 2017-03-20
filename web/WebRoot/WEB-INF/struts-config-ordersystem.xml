@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >
+    <action path="/os/getOrder" type="com.ymai.struts.action.ordersystem.GetOrderAction" >
+		<forward name="currentOrder" path="/os/currentOrder.jsp"></forward>
+		<forward name="orderFrame" path="/os/orderTraceFrame.jsp"></forward>
+		<forward name="orderOk" path="/os/orderOk.jsp"></forward>
+	</action>
+  </action-mappings>
+
+  <controller />
+</struts-config>
+

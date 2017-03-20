@@ -1,0 +1,242 @@
+@charset "utf-8";
+/* CSS Document */
+
+#left_side{
+	float:left;
+	width:700px;
+	height:auto;
+}
+
+#left_main{
+	width:698px;
+	height:auto;
+	padding-bottom:16px;
+	border:#ff9933 solid 1px;
+	float:left;
+}
+
+#left_main .title{
+	width:inherit;
+	height:32px;
+	font-size:16px;
+	font-weight:bold;
+	display:block;
+	line-height:32px;
+	background:url(../image/comment/shop_comment_title_bg.png) repeat;
+}
+
+#left_main .title .text{
+	margin-left:16px;
+}
+
+#left_main .pingfen{
+
+}
+
+#left_main .pingfen .text{
+	margin-left:16px;
+}
+
+
+#left_main .pingfen .text .item{
+	margin-left:8px;
+	font-size:13px;
+
+}
+
+#left_main .pingfen .text .fen{
+	color:#e51313;
+	font-size:13px;
+	font-weight:bold;
+}
+
+#left_main .logo{
+	margin-left:16px;
+	float:left;
+	
+}
+
+#left_main .shop_detail{
+	float:left;
+	margin-left:16px;
+	width:486px;
+	height:auto;
+}
+
+#left_main .shop_detail{
+	color:black;
+}
+
+#left_main .shop_detail .item_style1{
+	background:url(../image/shop/dp_b2.gif) no-repeat 0px 2px;
+}
+
+#left_main .shop_detail .item_style1 strong{
+	margin-left:12px;
+}
+
+#left_main .shop_detail .text{
+	display:block;font-size:12px;line-height:18px;padding-bottom:4px;
+}
+
+#left_comment{
+	width:inherit;
+	height:auto;
+	float:left;
+	margin-top:8px;
+}
+
+#left_comment .title ul{
+	list-style:none outside none;
+}
+
+#left_comment .title a,#left_comment .title a span{
+	background:url(http://i1.dpfile.com/s/css/img/c.shop.v12.png) no-repeat;
+}
+
+#left_comment .title{
+	width:inherit;
+	!width:700px;
+
+}
+
+#left_comment .title ul{
+border-bottom:3px solid #FF9933;
+height:28px;
+position:relative;
+}
+
+#left_comment .title li{
+display:inline;
+}
+
+#left_comment .title a.on{
+	background-position:0 -59px;
+	float:left;
+	color:#000;
+	font-weight:bold;
+	margin-right:2px;
+}
+
+#left_comment .title a.on span{
+background-position:right -90px;
+cursor:pointer;
+display:block;
+float:left;
+font-size:13px;
+font-weight:bold;
+height:21px;
+padding:7px 7px 0;
+text-align:center;
+}
+
+#left_comment .title a{
+background-position:0 -115px;
+float:left;
+margin-right:2px;
+}
+
+#left_comment .title a span{
+background-position:right -140px;
+color:#333;
+cursor:pointer;
+display:block;
+float:left;
+font-size:13px;
+height:20px;
+padding:8px 7px 0;
+text-align:center;
+}
+
+#left_comment .comment{
+	width:inherit;
+	!width:700px;
+	height:auto;
+	padding-bottom:16px;
+	
+}
+
+#left_comment .comment .name{
+	color:#ff6600;
+	font-weight:bold;
+	font-size:12px;
+	display:block;
+	padding-left:16px;
+	height:28px;
+	line-height:28px;
+	background-color:#f7f7f7;
+}
+
+
+#left_comment .comment .text{
+	display:block;
+	padding-left:16px;
+	line-height:20px;
+}
+
+#left_comment .pingfen{
+	padding:4px 16px;
+}
+
+#left_comment .pingfen span{
+}
+
+#left_comment .pingfen .text{
+	display:inline;
+}
+
+
+#left_comment .pingfen .text .item{
+	margin-left:4px;
+	font-size:12px;
+
+}
+
+#left_comment .pingfen .text .fen{
+	color:#e51313;
+	font-size:12px;
+	font-weight:bold;
+}
+
+#left_comment .foot{
+	margin-left:16px;
+	margin-top:8px;
+}
+
+#left_comment .foot span{
+	color:#999;
+}
+
+#leave_comment{
+	float:left;
+	background:#f5f5f5;
+	width:inherit;
+	!width:700px;
+	height:280px;
+}
+
+#leave_comment .title{
+	display:block;
+	width:700px;
+	height:32px;
+	line-height:28px;
+	background-color:#efefef;
+}
+
+#leave_comment .title .text{
+	margin-left:16px;
+	font-size:13px;
+	font-weight:bold;
+	
+}
+
+#leave_comment .title .text .shop_name{
+	margin:0 4px;
+	color:#F63;
+}
+
+#leave_comment .msg{
+	margin:0 16px;
+	width:640px;
+	height:80px;
+}

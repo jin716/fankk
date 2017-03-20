@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+    <form-bean name="addOrderForm" type="com.ymai.struts.action.order.AddOrderForm" />
+    <form-bean name="addComntForm" type="com.ymai.struts.action.order.AddComntForm" />
+
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >
+    <action path="/order/blockList" type="com.ymai.struts.action.order.BlockListAction">
+    	<forward name="list" path="/order/blockList.jsp"></forward>
+    </action>
+    <action path="/order/storeList" type="com.ymai.struts.action.order.StoreListAction">
+    	<forward name="list" path="/order/storeList.jsp"></forward>
+    </action>
+    <action path="/order/store" type="com.ymai.struts.action.order.StoreAction" >
+    	<forward name="store" path="/order/store.jsp"></forward>
+    </action>
+    <action name="addOrderForm" path="/order/addOrder" type="com.ymai.struts.action.order.AddOrderAction">
+    	<forward name="comfirm" path="/order/orderComfirm.html"></forward>
+    	<forward name="error" path="/order/orderError.html"></forward>
+    </action>
+    <action path="/order/getComment" type="com.ymai.struts.action.order.GetCommentAction">
+    	<forward name="main" path="/order/comment.jsp"></forward>
+    	<forward name="all" path="/order/all_content.jsp"></forward>
+    	<forward name="comment" path="/order/comment_content.jsp"></forward>
+    	<forward name="liuyan" path="/order/liuyan_content.jsp"></forward>
+    </action>
+	<action name="addComntForm" path="/order/addComnt" type="com.ymai.struts.action.order.AddComntAction" />
+    <action path="/order/orderCommit" type="com.ymai.struts.action.order.OrderCommitAction">
+    	<forward name="ok" path="/order/orderOk.html"></forward>
+    	<forward name="error" path="/order/orderError.html"></forward>
+    	<forward name="validate" path="/order/orderValidate.jsp" redirect="true"></forward>
+    </action>
+	<action path="/order/orderCommitValidate" type="com.ymai.struts.action.order.OrderCommitValidateAction">
+    	<forward name="ok" path="/order/orderOk.html"></forward>
+    	<forward name="error" path="/order/orderError.html"></forward>
+    </action>
+    <action path="/order/noOpen" type="com.ymai.struts.action.order.NoOpenAction">
+    	<forward name="show" path="/order/storeNoOpen.jsp"></forward>
+    
+    </action>
+    <action path="/order/checkBlock" type="com.ymai.struts.action.order.CheckBlockAction">
+  		<forward name="show" path="/order/checkBlock.jsp"></forward>
+  	</action>
+  </action-mappings>
+  
+  <controller />
+</struts-config>
+

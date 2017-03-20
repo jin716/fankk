@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+
+li.info{
+	text-align:left;
+}
+
+span.tip{
+	color:#999;
+}
+
+#detail_star{
+	margin-top:8px;
+}
+
+#detail_star span{
+	display:block;
+	float:left;
+}
+#detail_star span.star{
+	display:block;
+	float:left;
+}
+
+#detail_star .wp{
+	width:140px;
+	float:left;
+}
+
+.text_comment{
+	margin-top:8px;
+	float:left;
+}
+
+.text_comment .words{
+	float:left;
+}
+
+.text_comment .favorite{
+		margin-top:8px;
+	float:left;
+}
+
+.text_comment .btn{
+		margin-top:8px;
+	float:left;
+	width:300px;
+}

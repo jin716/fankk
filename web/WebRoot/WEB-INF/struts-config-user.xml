@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+	<data-sources />
+	<form-beans>
+		<form-bean name="ItemImageUpForm"
+			type="com.ymai.struts.action.user.s.ItemImageUpForm" />
+		<form-bean name="StoreImageUpForm"
+			type="com.ymai.struts.action.user.s.StoreImageUpForm" />
+		<form-bean name="itemEditForm"
+			type="com.ymai.struts.action.user.s.ItemEditForm" />
+		<form-bean name="registerForm"
+			type="com.ymai.struts.action.user.RegisterForm" />
+    <form-bean name="applyForm" type="com.ymai.struts.action.user.ApplyForm" />
+
+	</form-beans>
+
+	<global-exceptions />
+	<global-forwards>
+		<forward name="login" path="/user/login.jsp" redirect="true"></forward>
+	</global-forwards>
+	<action-mappings>
+		<action path="/user/register" name="registerForm" attribute="registerForm" input="/user/register.jsp" validate="true" type="com.ymai.struts.action.user.RegisterAction">
+			<forward name="activate" path="/user/activate.do?action=ac" redirect="true"></forward>
+			<forward name="error" path="/user/register.jsp"></forward>
+			<forward name="step_1" path="/user/register.jsp"></forward>
+		</action>
+		<action path="/user/activate" type="com.ymai.struts.action.user.ActivateAction">
+   			<forward name="again" path="/user/activate.jsp"></forward>
+   			<forward name="ok" path="/user/registerOk.jsp" redirect="true"></forward>
+   		</action>
+   		<action path="/user/activateCodeSend" type="com.ymai.struts.action.user.ActivateCodeSendAction">
+   		</action>
+		<action path="/user/login" type="com.ymai.struts.action.user.LoginAction">
+			<forward name="error" path="/user/login.jsp"></forward>
+			<forward name="store" path="/user/s/welcome.do" redirect="true"></forward>
+			<forward name="admin" path="/user/a/welcome.do" redirect="true"></forward>
+			<forward name="user" path="/index.jsp" redirect="true"></forward>
+			<forward name="activate" path="/user/activate.jsp" redirect="true"></forward>
+		</action>
+		<action path="/user/password" type="com.ymai.struts.action.user.PasswordAction">
+			<forward name="error" path="/user/password.jsp" redirect="true"></forward>
+			<forward name="ok" path="/user/passwordOk.jsp" redirect="true"></forward>
+		</action>
+	    <action path="/user/my" type="com.ymai.struts.action.user.MyAction">
+	    	<forward name="error" path="/user/login.jsp"></forward>
+			<forward name="store" path="/user/s/welcome.do" redirect="true"></forward>
+			<forward name="admin" path="/user/a/welcome.do" redirect="true"></forward>
+			<forward name="user" path="/user/u/welcome.do" redirect="true"></forward>
+			<forward name="activate" path="/user/activate.jsp" redirect="true"></forward>
+	    </action>
+    	<action path="/user/exit" type="com.ymai.struts.action.user.ExitAction">
+    		<forward name="exit" path="/index.jsp" redirect="true"></forward>
+   		</action>
+    	<action path="/user/check" type="com.ymai.struts.action.user.CheckAction" />
+    	<action path="/user/checkVcode" type="com.ymai.struts.action.user.CheckVcodeAction"></action>
+    	<action name="applyForm" validate="true"  input="/user/apply.jsp" path="/user/apply" type="com.ymai.struts.action.user.ApplyAction">
+    		<forward name="ok" path="/user/applyok.html"></forward>
+    		<forward name="error" path="/user/applyerror.html"></forward>
+    	</action>
+	</action-mappings>
+	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+		<set-property property="pathnames"
+			value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml" />
+	</plug-in>
+	<controller maxFileSize="10M"></controller>
+
+</struts-config>
+
